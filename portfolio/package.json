@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://eileenav.github.io/EileenPortfolio/portfolio",
   "private": true,
   "homepage": "https://eileenav.github.io/EileenPortfolio",
   "dependencies": {
