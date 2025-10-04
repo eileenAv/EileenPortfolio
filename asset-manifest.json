@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/EileenPortfolio/static/css/main.23c0dc9e.css",
+    "main.js": "/EileenPortfolio/static/js/main.aa96a379.js",
+    "static/js/453.6264690d.chunk.js": "/EileenPortfolio/static/js/453.6264690d.chunk.js",
+    "index.html": "/EileenPortfolio/index.html",
+    "main.23c0dc9e.css.map": "/EileenPortfolio/static/css/main.23c0dc9e.css.map",
+    "main.aa96a379.js.map": "/EileenPortfolio/static/js/main.aa96a379.js.map",
+    "453.6264690d.chunk.js.map": "/EileenPortfolio/static/js/453.6264690d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23c0dc9e.css",
+    "static/js/main.aa96a379.js"
+  ]
+}
