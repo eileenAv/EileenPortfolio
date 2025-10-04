@@ -1,8 +1,8 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
-import Home from "./pages/home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
+import Home from "./pages/home.js";
+import About from "./pages/About.js";
+import Projects from "./pages/Projects.js";
 import "./App.css";
 
 function App() {
