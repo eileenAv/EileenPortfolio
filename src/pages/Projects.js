@@ -7,11 +7,11 @@ function Projects() {
       <ul className="proj-list">
         <li className="proj-card">
           <h3>Project One</h3>
-          <p>Mobile onboarding flow: 18% lift in activation, AA contrast + WCAG forms.</p>
+          <p></p>
         </li>
         <li className="proj-card">
           <h3>Project Two</h3>
-          <p>Design system tokens + components, reduced ship time by 30%.</p>
+          <p></p>
         </li>
       </ul>
     </section>
