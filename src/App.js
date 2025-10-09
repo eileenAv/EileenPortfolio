@@ -3,6 +3,7 @@ import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import Home from "./pages/home.js";
 import About from "./pages/About.js";
 import Projects from "./pages/Projects.js";
+import Ora from "./pages/Projects/Ora.js";
 import "./App.css";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/ora" element={<Ora />} />
           </Routes>
         </div>
       </div>
