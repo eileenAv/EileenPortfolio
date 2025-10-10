@@ -1,16 +1,34 @@
 {
   "files": {
-    "main.css": "/EileenPortfolio/static/css/main.d683af31.css",
-    "main.js": "/EileenPortfolio/static/js/main.efb0cef6.js",
-    "static/js/488.7ebadc4e.chunk.js": "/EileenPortfolio/static/js/488.7ebadc4e.chunk.js",
+    "main.css": "/EileenPortfolio/static/css/main.42f6083a.css",
+    "main.js": "/EileenPortfolio/static/js/main.5b0b1f60.js",
+    "static/js/453.b11b1699.chunk.js": "/EileenPortfolio/static/js/453.b11b1699.chunk.js",
+    "static/media/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.png": "/EileenPortfolio/static/media/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.4aa73ac23707a955e46e.png",
+    "static/media/Recording 2025-10-10 at 13.12.11.gif": "/EileenPortfolio/static/media/Recording 2025-10-10 at 13.12.11.01e5f4dd6dd9cd85ca81.gif",
+    "static/media/Recording 2025-10-10 at 13.22.21.gif": "/EileenPortfolio/static/media/Recording 2025-10-10 at 13.22.21.5c6159147b102488524f.gif",
+    "static/media/screencapture-file-C-Users-avcia-Desktop-LETI-AboutPage-html-2025-10-10-15_59_04.png": "/EileenPortfolio/static/media/screencapture-file-C-Users-avcia-Desktop-LETI-AboutPage-html-2025-10-10-15_59_04.ac9e467ebb1fa987567d.png",
     "static/media/profile.jpg": "/EileenPortfolio/static/media/profile.39a8173e6f1b983a83cc.jpg",
+    "static/media/screencapture-angespr-github-io-juvo-2025-10-10-12_14_29.png": "/EileenPortfolio/static/media/screencapture-angespr-github-io-juvo-2025-10-10-12_14_29.9056d4749cd2d78685d3.png",
+    "static/media/Desktop Mockup final1.jpg": "/EileenPortfolio/static/media/Desktop Mockup final1.6db5a03692a80374a6ba.jpg",
+    "static/media/john.png": "/EileenPortfolio/static/media/john.1cfe19b7e878c63e9354.png",
+    "static/media/sarah.png": "/EileenPortfolio/static/media/sarah.ba48e0570e44f6407cb5.png",
+    "static/media/ThisisTheHero.png": "/EileenPortfolio/static/media/ThisisTheHero.86ddee93eff0a40687c5.png",
+    "static/media/cards.png": "/EileenPortfolio/static/media/cards.94f02c9f0d8d3414c2dc.png",
+    "static/media/sonuclar2.png": "/EileenPortfolio/static/media/sonuclar2.2c21524d40a98ce1d047.png",
+    "static/media/gains.png": "/EileenPortfolio/static/media/gains.69abb85e812e5ba602d1.png",
+    "static/media/athenaLogo.png": "/EileenPortfolio/static/media/athenaLogo.9c2fc27a7e57ad054bac.png",
+    "static/media/card.png": "/EileenPortfolio/static/media/card.f81487e2441d5dd1dcd0.png",
+    "static/media/sonuclar1.png": "/EileenPortfolio/static/media/sonuclar1.bf088826c8df66ed4802.png",
+    "static/media/doors.png": "/EileenPortfolio/static/media/doors.01d3616d96232b24ea77.png",
+    "static/media/ICONS ORIGINAL.png": "/EileenPortfolio/static/media/ICONS ORIGINAL.aaf63a0734300fdc75fc.png",
+    "static/media/mainpage.png": "/EileenPortfolio/static/media/mainpage.55e8a930a8c94b0851b3.png",
     "index.html": "/EileenPortfolio/index.html",
-    "main.d683af31.css.map": "/EileenPortfolio/static/css/main.d683af31.css.map",
-    "main.efb0cef6.js.map": "/EileenPortfolio/static/js/main.efb0cef6.js.map",
-    "488.7ebadc4e.chunk.js.map": "/EileenPortfolio/static/js/488.7ebadc4e.chunk.js.map"
+    "main.42f6083a.css.map": "/EileenPortfolio/static/css/main.42f6083a.css.map",
+    "main.5b0b1f60.js.map": "/EileenPortfolio/static/js/main.5b0b1f60.js.map",
+    "453.b11b1699.chunk.js.map": "/EileenPortfolio/static/js/453.b11b1699.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d683af31.css",
-    "static/js/main.efb0cef6.js"
+    "static/css/main.42f6083a.css",
+    "static/js/main.5b0b1f60.js"
   ]
 }
