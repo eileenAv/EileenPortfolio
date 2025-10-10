@@ -34,12 +34,11 @@ function Projects() {
     },
     {
       id: 4,
-      title: "Project Four",
-      description: "Mobile-first responsive design project",
+      title: "Project Alpha: Athena AI Study Bot",
+      description: "AI-powered study tool for students",
       previewImage: "/project-previews/project4-preview.jpg",
-      tech: ["Mobile Design", "UI/UX", "Responsive"],
-      detailDescription: "A mobile-first approach to creating seamless user experiences across all devices",
-      route: "/projects/project-four"
+      tech: ["AI","Ux Research", "UI/UX"],
+      route: "/projects/athena"
     },
     {
       id: 5,

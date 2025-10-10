@@ -1,0 +1,177 @@
+.athena-page {
+  background: #F6F4F1;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.athena-hero {
+  position: relative;
+  padding: 6rem 2rem;
+  background: #020202;
+  border-radius: 0 0 3rem 3rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+}
+
+.athena-hero__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.athena-hero__text { flex: 1; text-align: left; }
+.athena-hero__media { flex: 1; }
+
+.athena-title {
+  font-size: 4.5rem;
+  color: #E28D07;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif;
+  position: relative;
+  text-align: left;
+}
+.athena-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 200px;
+  height: 4px;
+  background: #800001;
+  border-radius: 2px;
+}
+
+.athena-subtitle {
+  font-size: 1.4rem;
+  color: #f4e9e2;
+  max-width: 600px;
+  margin: 12px 0;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.athena-hero__details { margin-top: 12px; color: #f4e9e2; }
+.athena-list { list-style: none; padding: 0; margin-bottom: 1.5rem; }
+.athena-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem; font-size: 1.1rem; }
+.athena-list li::before { content: '★'; position: absolute; left: 0; color: #E28D07; font-size: 1rem; }
+.athena-list strong { color: #E28D07; font-weight: 500; }
+
+.athena-gif {
+  width: 100%;
+  min-width: 100px;
+  aspect-ratio: 16/9;
+  background: rgba(255,255,255,0.1);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(254,200,124,0.3);
+}
+.athena-gif__text { color: #fec87c; font-size: 1.2rem; font-weight: 500; }
+
+.athena-gif__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .athena-hero__container { flex-direction: column-reverse; gap: 2rem; }
+  .athena-hero__text, .athena-hero__media { width: 100%; }
+  .athena-title { font-size: 3.5rem; }
+}
+
+.athena-section,
+.athena-role,
+.athena-process,
+.athena-results {
+  padding: 2.5rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.athena-h2 {
+  font-size: 2.5rem;
+  color: #800001;
+  margin-bottom: 14px;
+  position: relative;
+  display: inline-block;
+}
+.athena-h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #E28D07;
+  border-radius: 2px;
+}
+
+.athena-role ul, .athena-process ol { list-style: none; padding: 0; }
+.athena-role ul li, .athena-process ol li {
+  font-size: 1.2rem; margin-bottom: 1.5rem; padding-left: 2rem; position: relative;
+  color: #444; line-height: 1.6;
+}
+.athena-role ol { list-style: none; padding: 0; margin: 1.5rem 0; }
+.athena-role ol li { position: relative; padding-left: 2rem; margin-bottom: 1.1rem; line-height: 1.6; font-size: 1.1rem; color: #464444; }
+.athena-role ol li::before { content: '★'; position: absolute; left: 0; top: 0; color: #E28D07; font-size: 1.2rem; }
+.athena-role ul li::before { content: '✦'; position: absolute; left: 0; color: #E28D07; }
+
+.athena-process ol { counter-reset: athena-counter; }
+.athena-process ol li { counter-increment: athena-counter; }
+.athena-process ol li::before {
+  content: counter(athena-counter);
+  position: absolute; left: 0; width: 24px; height: 24px;
+  background: #800001; border-radius: 50%; color: #F6F4F1; font-size: .9rem;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.athena-text { color: #020202; line-height: 1.8; margin-bottom: 16px; font-size: 1.1rem; }
+
+.athena-final { padding: 2.5rem 1.5rem; max-width: 1200px; margin: 0 auto 24px; }
+.athena-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border: 2px solid #800001;
+  background-color: #fff;
+  height: 0;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+}
+.athena-video iframe {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;
+}
+
+.athena-images {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  width: 100%;
+  max-width: 1600px;
+  margin: 3rem auto;
+  padding: 30px;
+}
+
+.athena-images img {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  object-fit: contain;
+  border-radius: 1.5rem;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.athena-images img:hover {
+  transform: scale(1.02);
+}

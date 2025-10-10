@@ -15,7 +15,7 @@ const Ora = () => {
                     <div className="hero-text">
                         <h1>ORA: FigBuild 2025 Project</h1>
                         <p className="subtitle">
-                            An app that helps users plan their daily lives to reach a long-term goal gamified and fun way.
+                          
                         </p>
                         <div className="hero-details">
                             <ul>
