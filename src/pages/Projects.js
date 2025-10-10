@@ -10,12 +10,47 @@ function Projects() {
       id: 1,
       title: "Ora Project",
       description: "UX Design and Development of the Ora platform interface",
-      previewImage: "/project-previews/ora-preview.jpg", // Add your preview image
+      previewImage: "/project-previews/ora-preview.jpg",
       tech: ["React", "UI/UX", "Frontend"],
       detailDescription: "A comprehensive platform redesign focusing on user experience and modern interface design",
       route: "/projects/ora"
     },
-    // You can add more projects here following the same structure
+    {
+      id: 2,
+      title: "Juvo",
+      description: "UX Design and Development of the Juvo platform interface",
+      previewImage: "/project-previews/juvo-preview.jpg",
+      tech: ["React", "UI/UX", "Frontend", "Hackathon"],
+      detailDescription: "A comprehensive platform redesign focusing on user experience and modern interface design",
+      route: "/projects/juvo"
+    },
+    {
+      id: 3,
+      title: "Project Three",
+      description: "Interactive web application focusing on user engagement",
+      previewImage: "/project-previews/project3-preview.jpg",
+      tech: ["React", "Node.js", "UI/UX", "Full Stack"],
+      detailDescription: "An innovative web application that combines modern design with powerful functionality",
+      route: "/projects/project-three"
+    },
+    {
+      id: 4,
+      title: "Project Four",
+      description: "Mobile-first responsive design project",
+      previewImage: "/project-previews/project4-preview.jpg",
+      tech: ["Mobile Design", "UI/UX", "Responsive"],
+      detailDescription: "A mobile-first approach to creating seamless user experiences across all devices",
+      route: "/projects/project-four"
+    },
+    {
+      id: 5,
+      title: "Project Five",
+      description: "E-commerce platform UI/UX redesign",
+      previewImage: "/project-previews/project5-preview.jpg",
+      tech: ["E-commerce", "UI/UX", "Frontend", "User Research"],
+      detailDescription: "Complete redesign of an e-commerce platform focusing on conversion optimization and user experience",
+      route: "/projects/project-five"
+    }
   ];
 
   return (

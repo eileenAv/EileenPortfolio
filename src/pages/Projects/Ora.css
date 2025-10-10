@@ -1,33 +1,63 @@
 .project-page {
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    background: #464444;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-hero {
+    position: relative;
+    padding: 6rem 2rem;
     text-align: center;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 3rem 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     margin-bottom: 60px;
 }
 
+/* Removed animated background */
+
 .project-hero h1 {
-    font-size: 3rem;
-    color: #722dcc;
+    font-size: 4.5rem;
+    color: #fec87c;
     margin-bottom: 20px;
     font-family: 'Lora', serif;
+    position: relative;
+}
+
+.project-hero h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #fec87c;
+    border-radius: 2px;
 }
 
 .subtitle {
-    font-size: 1.2rem;
-    color: #666;
+    font-size: 1.4rem;
+    color: #464444;
     max-width: 600px;
-    margin: 0 auto 40px;
+    margin: 2rem auto;
+    line-height: 1.6;
+    font-weight: 300;
 }
 
 .project-overview,
 .project-role,
 .project-process,
 .project-results {
-    margin-bottom: 40px;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .figma-embed {
@@ -35,9 +65,15 @@
     max-width: 1200px;
     height: 600px;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    margin: 3rem auto;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.figma-embed:hover {
+    transform: translateY(-5px);
 }
 
 @media (max-width: 768px) {
@@ -47,24 +83,75 @@
 }
 
 h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #fec87c;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
 }
 
-ul, ol {
-    padding-left: 20px;
-    margin-bottom: 20px;
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #fec87c;
+    border-radius: 2px;
 }
 
-li {
-    margin-bottom: 10px;
+.project-role ul, .project-process ol {
+    list-style: none;
+    padding: 0;
+}
+
+.project-role ul li, .project-process ol li {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    position: relative;
     color: #444;
     line-height: 1.6;
+}
+/* comment */
+.project-role ul li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: #fec87c;
+}
+
+.project-process ol {
+    counter-reset: process-counter;
+}
+
+.project-process ol li {
+    counter-increment: process-counter;
+}
+
+.project-process ol li::before {
+    content: counter(process-counter);
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: #fec87c;
+    border-radius: 50%;
+    color: #464444;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p {
     color: #444;
     line-height: 1.8;
     margin-bottom: 20px;
+    font-size: 1.1rem;
 }
+
+
+/* Removed decorative gradients */
+
