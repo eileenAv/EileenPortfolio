@@ -5,23 +5,31 @@ const Ora = () => {
     return (
         <main className="project-page ora-project">
             <section className="project-hero">
-                <div className="intro">
-                    <h1>Ora UX Project</h1>
-                    <p className="subtitle">
-                        A case study on enhancing user experience for Ora, a productivity platform.
-                    </p>
-                    <h2>Interactive Prototype</h2>
-               
-                <div className="figma-embed">
-                    <iframe
-                        style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-                        width="100%"
-                        height="100%"
-                        src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/GspYGqlhQ6iZpSQv2u2eKW/FigBuild-2025?node-id=218-751%26p=f%26t=HVrZTwbkppIptQ85-1%26scaling=scale-down%26content-scaling=fixed%26page-id=218%3A367%26starting-point-node-id=218%3A736" 
-                        allowFullScreen
-                    ></iframe>
+                <div className="hero-container">
+                    <div className="hero-media">
+                        <div className="gif-placeholder">
+                            {/* Replace this with your actual GIF */}
+                            <div className="placeholder-text">Project Demo GIF</div>
+                        </div>
+                    </div>
+                    <div className="hero-text">
+                        <h1>Ora UX Project</h1>
+                        <p className="subtitle">
+                            A case study on enhancing user experience for Ora, a productivity platform.
+                        </p>
+                        <div className="hero-details">
+                            <h3>Project Highlights</h3>
+                            <ul>
+                                <li>Enhanced user workflow efficiency</li>
+                                <li>Modernized interface design</li>
+                                <li>Improved team collaboration features</li>
+                            </ul>
+                            <p className="impact-text">
+                                Resulting in 30% faster task completion and improved user satisfaction
+                            </p>
+                        </div>
+                    </div>
                 </div>
-             </div>
             </section>
 
             <section className="project-overview">

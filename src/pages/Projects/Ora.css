@@ -1,5 +1,5 @@
 .project-page {
-    background: #464444;
+    background: #FAF9F6;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
@@ -8,15 +8,28 @@
 .project-hero {
     position: relative;
     padding: 6rem 2rem;
-    text-align: center;
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(10px);
+    background: #464444;
     border-radius: 0 0 3rem 3rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     margin-bottom: 60px;
 }
 
-/* Removed animated background */
+.hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-media {
+    flex: 1;
+}
 
 .project-hero h1 {
     font-size: 4.5rem;
@@ -24,15 +37,15 @@
     margin-bottom: 20px;
     font-family: 'Lora', serif;
     position: relative;
+    text-align: left;
 }
 
 .project-hero h1::after {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
+    left: 0;
+    width: 200px;
     height: 4px;
     background: #fec87c;
     border-radius: 2px;
@@ -40,11 +53,81 @@
 
 .subtitle {
     font-size: 1.4rem;
-    color: #464444;
+    color: #ffffff;
     max-width: 600px;
-    margin: 2rem auto;
+    margin: 2rem 0;
     line-height: 1.6;
     font-weight: 300;
+}
+
+.hero-details {
+    margin-top: 2rem;
+    color: #ffffff;
+}
+
+.hero-details h3 {
+    color: #fec87c;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero-details ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.hero-details li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.hero-details li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #fec87c;
+}
+
+.impact-text {
+    font-size: 1.2rem;
+    color: #fec87c;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.gif-placeholder {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(254, 200, 124, 0.3);
+}
+
+.placeholder-text {
+    color: #fec87c;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    
+    .hero-text, .hero-media {
+        width: 100%;
+    }
+    
+    .project-hero h1 {
+        font-size: 3.5rem;
+    }
 }
 
 .project-overview,
@@ -55,9 +138,7 @@
     max-width: 1200px;
     margin: 0 auto 40px;
     position: relative;
-    background: rgba(255, 255, 255, 0.95);
     border-radius: 2rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .figma-embed {
@@ -84,7 +165,7 @@
 
 h2 {
     font-size: 2.5rem;
-    color: #fec87c;
+    color: #464444;
     margin-bottom: 2rem;
     position: relative;
     display: inline-block;
