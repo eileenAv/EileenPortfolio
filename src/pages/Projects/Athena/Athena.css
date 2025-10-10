@@ -133,7 +133,7 @@
   display: flex; align-items: center; justify-content: center;
 }
 
-.athena-text { color: #020202; line-height: 1.8; margin-bottom: 16px; font-size: 1.1rem; }
+.athena-text { color: #181818; line-height: 1.8; margin-bottom: 16px; font-size: 1.1rem; }
 
 .athena-final { padding: 2.5rem 1.5rem; max-width: 1200px; margin: 0 auto 24px; }
 .athena-video {

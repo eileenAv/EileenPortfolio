@@ -42,12 +42,11 @@ function Projects() {
     },
     {
       id: 5,
-      title: "Project Five",
+      title: "LETI Internship: Website Redesign",
       description: "E-commerce platform UI/UX redesign",
       previewImage: "/project-previews/project5-preview.jpg",
-      tech: ["E-commerce", "UI/UX", "Frontend", "User Research"],
-      detailDescription: "Complete redesign of an e-commerce platform focusing on conversion optimization and user experience",
-      route: "/projects/project-five"
+      tech: ["Webdesign", "UI/UX", "Frontend"],
+      route: "/projects/leti"
     }
   ];
 

@@ -43,7 +43,7 @@ function UwRedesign() {
       <section className="uwRedesign-section">
         <h2 className="uwRedesign-h2">Goal</h2>
         <p>
-          To redesign the UW homepage and subpages in a way that incorporates the current UX design trends and creates a more clear and user-friendly version of the current UW Bothell website. I did I benchmarking 
+          To redesign the UW homepage and subpages in a way that incorporates the current UX design trends and creates a more clear and user-friendly version of the current UW Bothell website. I did I benchmarking anaylsis of the current UW Bothell website and identified some ways that can be improved. 
         </p>
       </section>
 
@@ -118,9 +118,7 @@ function UwRedesign() {
       <section className="uwRedesign-process">
         <h2 className="uwRedesign-h2">What I Learned</h2>
         <p>
-          Through the UW Redesign project, I gained deeper experience in responsive design, brand consistency,
-          and accessibility standards. I also strengthened my collaboration skills and technical ability to
-          transform Figma designs into responsive React interfaces.
+          Through the UW Redesign project, I gained experience in maintaining the brand identity of an organization and I learned about benchmarking analysis. I was also able to learn more about the current UX trends and how to effectively implement them into my design.
         </p>
       </section>
     </main>

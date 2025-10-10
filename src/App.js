@@ -6,6 +6,7 @@ import Projects from "./pages/Projects.js";
 import Ora from "./pages/Projects/ORA/Ora.js";
 import UwRedesign from "./pages/Projects/UWwebsite/UwRedesign.js";
 import Athena from "./pages/Projects/Athena/Athena.js";
+import Leti from "./pages/Projects/Leti/Leti.js";
 import "./App.css";
 import Juvo from "./pages/Projects/Juvo/Juvo.js";
 
@@ -49,6 +50,7 @@ function App() {
             <Route path="/projects/juvo" element={<Juvo />} />
             <Route path="/projects/uw-redesign" element={<UwRedesign />} />
             <Route path="/projects/athena" element={<Athena />} />
+            <Route path="/projects/leti" element={<Leti />} />
           </Routes>
         </div>
       </div>
