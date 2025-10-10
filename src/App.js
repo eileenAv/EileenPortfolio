@@ -4,6 +4,7 @@ import Home from "./pages/home.js";
 import About from "./pages/About.js";
 import Projects from "./pages/Projects.js";
 import Ora from "./pages/Projects/ORA/Ora.js";
+import UwRedesign from "./pages/Projects/UWwebsite/UwRedesign.js";
 import "./App.css";
 import Juvo from "./pages/Projects/Juvo/Juvo.js";
 
@@ -45,6 +46,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/ora" element={<Ora />} />
             <Route path="/projects/juvo" element={<Juvo />} />
+            <Route path="/projects/uw-redesign" element={<UwRedesign />} />
           </Routes>
         </div>
       </div>

@@ -26,12 +26,11 @@ function Projects() {
     },
     {
       id: 3,
-      title: "Project Three",
-      description: "Interactive web application focusing on user engagement",
+      title: "Uw Website Redesign",
+      description: "A personal project where I redesigned my university's website.",
       previewImage: "/project-previews/project3-preview.jpg",
-      tech: ["React", "Node.js", "UI/UX", "Full Stack"],
-      detailDescription: "An innovative web application that combines modern design with powerful functionality",
-      route: "/projects/project-three"
+      tech: ["React", "UI/UX", "UX Research", "Benchmarking"],
+      route: "/projects/uw-redesign"
     },
     {
       id: 4,
