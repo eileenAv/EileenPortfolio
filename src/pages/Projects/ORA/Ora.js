@@ -8,9 +8,8 @@ const Ora = () => {
             <section className="project-hero">
                 <div className="hero-container">
                     <div className="hero-media">
-                        <div className="gif-placeholder">
-                            {/* Replace this with your actual GIF */}
-                            <div className="placeholder-text">Project Demo GIF</div>
+                        <div className="ora-gif">
+                            <img src={require("../../../assets/Ora/Recording 2025-10-10 at 13.22.21.gif")} alt="ORA App Demo" className="ora-gif__image" />
                         </div>
                     </div>
                     <div className="hero-text">
@@ -68,11 +67,12 @@ const Ora = () => {
 
                <section className="project-process">
                 <h2>Final Prototype UI</h2>
-              <div className="images">
-                <img src="/media/img1.jpg" alt="Image 1" className="images__img" />
-                <img src="/media/img2.jpg" alt="Image 2" className="images__img" />
-                <img src="/media/img3.jpg" alt="Image 3" className="images__img" />
-                <img src="/media/img4.jpg" alt="Image 4" className="images__img" />
+              <div className="images" style={{ marginTop: '20px' }}>
+                <img src={require("../../../assets/Ora/mainpage.png")} alt="ORA Main Page" className="images__img" />
+                <img src={require("../../../assets/Ora/doors.png")} alt="ORA Doors Interface" className="images__img" />
+                <img src={require("../../../assets/Ora/cards.png")} alt="ORA Cards View" className="images__img" />
+                <img src={require("../../../assets/Ora/card.png")} alt="ORA Card Detail" className="images__img" />
+                <img src={require("../../../assets/Ora/gains.png")} alt="ORA Gains Dashboard" className="images__img" />
               </div>
             </section>
 
