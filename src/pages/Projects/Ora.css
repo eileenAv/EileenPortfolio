@@ -1,3 +1,8 @@
+:root{
+  --section-gap: 24px;
+  --section-pad: 2.5rem;
+}
+
 .project-page {
     background: #FAF9F6;
     min-height: 100vh;
@@ -11,7 +16,7 @@
     background: #464444;
     border-radius: 0 0 3rem 3rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    margin-bottom: 60px;
+    margin-bottom: var(--section-gap);
 }
 
 .hero-container {
@@ -55,13 +60,13 @@
     font-size: 1.4rem;
     color: #ffffff;
     max-width: 600px;
-    margin: 2rem 0;
+    margin: calc(var(--section-gap) * 0.5) 0;
     line-height: 1.6;
     font-weight: 300;
 }
 
 .hero-details {
-    margin-top: 2rem;
+    margin-top: calc(var(--section-gap) * 0.5);
     color: #ffffff;
 }
 
@@ -84,11 +89,51 @@
     font-size: 1.1rem;
 }
 
+.hero-sections {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.hero-section {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(254, 200, 124, 0.2);
+}
+
+.hero-section h3 {
+    color: #fec87c;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.hero-section p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-sections {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
 .hero-details li::before {
-    content: '→';
+    content: '★';
     position: absolute;
     left: 0;
     color: #fec87c;
+    font-size: 1rem;
+}
+
+.hero-details strong {
+    color: #fec87c;
+    font-weight: 500;
 }
 
 .impact-text {
@@ -134,9 +179,9 @@
 .project-role,
 .project-process,
 .project-results {
-    padding: 4rem 2rem;
+    padding: var(--section-pad) 1.5rem;
     max-width: 1200px;
-    margin: 0 auto 40px;
+    margin: 0 auto var(--section-gap);
     position: relative;
     border-radius: 2rem;
 }
@@ -148,7 +193,7 @@
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    margin: 3rem auto;
+    margin: calc(var(--section-gap) * 0.75) auto;
     transition: transform 0.3s ease;
     overflow: hidden;
 }
@@ -166,7 +211,7 @@
 h2 {
     font-size: 2.5rem;
     color: #464444;
-    margin-bottom: 2rem;
+    margin-bottom: calc(var(--section-gap) * 0.6);
     position: relative;
     display: inline-block;
 }
@@ -195,7 +240,67 @@ h2::after {
     color: #444;
     line-height: 1.6;
 }
-/* comment */
+
+.side-by-side-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: var(--section-gap);
+}
+
+.side-section {
+    flex: 1;
+    padding: 2rem;
+    background: rgba(254, 200, 124, 0.1);
+    border-radius: 1rem;
+    border: 1px solid rgba(254, 200, 124, 0.2);
+}
+
+.side-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.side-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #464444;
+}
+
+.key-features {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .side-by-side-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.project-role ol {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.project-role ol li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #464444;
+}
+
+.project-role ol li::before {
+    content: '★';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fec87c;
+    font-size: 1.2rem;
+}
+
 .project-role ul li::before {
     content: '✦';
     position: absolute;
@@ -229,10 +334,47 @@ h2::after {
 p {
     color: #444;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 16px; 
     font-size: 1.1rem;
 }
 
+.two-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
-/* Removed decorative gradients */
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.images__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .images {
+    grid-template-columns: 1fr;
+  }
+}
+
 
