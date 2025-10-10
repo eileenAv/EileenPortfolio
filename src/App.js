@@ -5,6 +5,7 @@ import About from "./pages/About.js";
 import Projects from "./pages/Projects.js";
 import Ora from "./pages/Projects/Ora.js";
 import "./App.css";
+import Juvo from "./pages/Projects/Juvo.js";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/ora" element={<Ora />} />
+            <Route path="/projects/juvo" element={<Juvo />} />
           </Routes>
         </div>
       </div>
