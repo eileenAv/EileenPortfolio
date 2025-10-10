@@ -1,10 +1,6 @@
-:root{
-  --section-gap: 24px;
-  --section-pad: 2.5rem;
-}
-
+/* 
 .project-page {
-    background: #FAF9F6;
+    background: #f4e9e2;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
@@ -13,10 +9,10 @@
 .project-hero {
     position: relative;
     padding: 6rem 2rem;
-    background: #464444;
+    background: #0E2528;
     border-radius: 0 0 3rem 3rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    margin-bottom: var(--section-gap);
+    margin-bottom: 24px;
 }
 
 .hero-container {
@@ -38,7 +34,7 @@
 
 .project-hero h1 {
     font-size: 4.5rem;
-    color: #fec87c;
+    color: #902d2d;
     margin-bottom: 20px;
     font-family: 'Lora', serif;
     position: relative;
@@ -52,26 +48,26 @@
     left: 0;
     width: 200px;
     height: 4px;
-    background: #fec87c;
+    background: #6a8d90;
     border-radius: 2px;
 }
 
 .subtitle {
     font-size: 1.4rem;
-    color: #ffffff;
+    color: #f4e9e2;
     max-width: 600px;
-    margin: calc(var(--section-gap) * 0.5) 0;
+    margin: 12px 0;
     line-height: 1.6;
     font-weight: 300;
 }
 
 .hero-details {
-    margin-top: calc(var(--section-gap) * 0.5);
-    color: #ffffff;
+    margin-top: 12px;
+    color: #f4e9e2;
 }
 
 .hero-details h3 {
-    color: #fec87c;
+    color: #902d2d;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -132,7 +128,7 @@
 }
 
 .hero-details strong {
-    color: #fec87c;
+    color: #6a8d90;
     font-weight: 500;
 }
 
@@ -179,9 +175,9 @@
 .project-role,
 .project-process,
 .project-results {
-    padding: var(--section-pad) 1.5rem;
+    padding: 2.5rem 1.5rem;
     max-width: 1200px;
-    margin: 0 auto var(--section-gap);
+    margin: 0 auto 24px;
     position: relative;
     border-radius: 2rem;
 }
@@ -193,7 +189,7 @@
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    margin: calc(var(--section-gap) * 0.75) auto;
+    margin: 18px auto;
     transition: transform 0.3s ease;
     overflow: hidden;
 }
@@ -210,8 +206,8 @@
 
 h2 {
     font-size: 2.5rem;
-    color: #464444;
-    margin-bottom: calc(var(--section-gap) * 0.6);
+    color: #902d2d;
+    margin-bottom: 14px;
     position: relative;
     display: inline-block;
 }
@@ -223,7 +219,7 @@ h2::after {
     left: 0;
     width: 60px;
     height: 3px;
-    background: #fec87c;
+    background: #6a8d90;
     border-radius: 2px;
 }
 
@@ -244,7 +240,7 @@ h2::after {
 .side-by-side-container {
     display: flex;
     gap: 2rem;
-    margin-bottom: var(--section-gap);
+    margin-bottom: 24px;
 }
 
 .side-section {
@@ -322,7 +318,7 @@ h2::after {
     left: 0;
     width: 24px;
     height: 24px;
-    background: #fec87c;
+    background: #902d2d;
     border-radius: 50%;
     color: #464444;
     font-size: 0.9rem;
@@ -377,4 +373,186 @@ p {
   }
 }
 
+.project-final-product {
+    padding: 2.5rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto 24px;
+    position: relative;
+    border-radius: 2rem;
+}
 
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border: 2px solid #902d2d;
+    background-color: white;
+    height: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: #fff;
+    margin: 2rem 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+} */
+
+.juvo-page {
+  background: #f4e9e2;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.juvo-hero {
+  position: relative;
+  padding: 6rem 2rem;
+  background: #0E2528;
+  border-radius: 0 0 3rem 3rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 24px;
+}
+
+.juvo-hero__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.juvo-hero__text { flex: 1; text-align: left; }
+.juvo-hero__media { flex: 1; }
+
+.juvo-title {
+  font-size: 4.5rem;
+  color: #902d2d;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif;
+  position: relative;
+  text-align: left;
+}
+.juvo-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 200px;
+  height: 4px;
+  background: #6a8d90;
+  border-radius: 2px;
+}
+
+.juvo-subtitle {
+  font-size: 1.4rem;
+  color: #f4e9e2;
+  max-width: 600px;
+  margin: 12px 0;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.juvo-hero__details { margin-top: 12px; color: #f4e9e2; }
+.juvo-list { list-style: none; padding: 0; margin-bottom: 1.5rem; }
+.juvo-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem; font-size: 1.1rem; }
+.juvo-list li::before { content: '★'; position: absolute; left: 0; color: #fec87c; font-size: 1rem; }
+.juvo-list strong { color: #6a8d90; font-weight: 500; }
+
+.juvo-gif {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: rgba(255,255,255,0.1);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(254,200,124,0.3);
+}
+.juvo-gif__text { color: #fec87c; font-size: 1.2rem; font-weight: 500; }
+
+.juvo-gif__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .juvo-hero__container { flex-direction: column-reverse; gap: 2rem; }
+  .juvo-hero__text, .juvo-hero__media { width: 100%; }
+  .juvo-title { font-size: 3.5rem; }
+}
+
+.juvo-section,
+.juvo-role,
+.juvo-process,
+.juvo-results {
+  padding: 2.5rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  position: relative;
+  border-radius: 2rem;
+}
+
+.juvo-h2 {
+  font-size: 2.5rem;
+  color: #902d2d;
+  margin-bottom: 14px;
+  position: relative;
+  display: inline-block;
+}
+.juvo-h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #6a8d90;
+  border-radius: 2px;
+}
+
+.juvo-role ul, .juvo-process ol { list-style: none; padding: 0; }
+.juvo-role ul li, .juvo-process ol li {
+  font-size: 1.2rem; margin-bottom: 1.5rem; padding-left: 2rem; position: relative;
+  color: #444; line-height: 1.6;
+}
+.juvo-role ol { list-style: none; padding: 0; margin: 1.5rem 0; }
+.juvo-role ol li { position: relative; padding-left: 2rem; margin-bottom: 1.1rem; line-height: 1.6; font-size: 1.1rem; color: #464444; }
+.juvo-role ol li::before { content: '★'; position: absolute; left: 0; top: 0; color: #fec87c; font-size: 1.2rem; }
+.juvo-role ul li::before { content: '✦'; position: absolute; left: 0; color: #fec87c; }
+
+.juvo-process ol { counter-reset: juvo-counter; }
+.juvo-process ol li { counter-increment: juvo-counter; }
+.juvo-process ol li::before {
+  content: counter(juvo-counter);
+  position: absolute; left: 0; width: 24px; height: 24px;
+  background: #902d2d; border-radius: 50%; color: #464444; font-size: .9rem;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.juvo-text { color: #444; line-height: 1.8; margin-bottom: 16px; font-size: 1.1rem; }
+
+.juvo-final { padding: 2.5rem 1.5rem; max-width: 1200px; margin: 0 auto 24px; }
+.juvo-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border: 2px solid #902d2d;
+  background-color: #fff;
+  height: 0;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+}
+.juvo-video iframe {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;
+}

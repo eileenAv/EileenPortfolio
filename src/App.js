@@ -3,9 +3,9 @@ import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import Home from "./pages/home.js";
 import About from "./pages/About.js";
 import Projects from "./pages/Projects.js";
-import Ora from "./pages/Projects/Ora.js";
+import Ora from "./pages/Projects/ORA/Ora.js";
 import "./App.css";
-import Juvo from "./pages/Projects/Juvo.js";
+import Juvo from "./pages/Projects/Juvo/Juvo.js";
 
 function App() {
   return (
