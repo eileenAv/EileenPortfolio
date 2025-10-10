@@ -12,7 +12,6 @@ function Projects() {
       description: "UX Design and Development of the Ora platform interface",
       //previewImage: "/project-previews/ora-preview.jpg",
       tech: ["React", "UI/UX", "Frontend"],
-      detailDescription: "A comprehensive platform redesign focusing on user experience and modern interface design",
       route: "/projects/ora"
     },
     {
@@ -20,7 +19,6 @@ function Projects() {
       title: "Juvo",
       description: "UX Design and Development of the Juvo platform interface",
       tech: ["React", "UI/UX", "Frontend", "Hackathon"],
-      detailDescription: "A comprehensive platform redesign focusing on user experience and modern interface design",
       route: "/projects/juvo"
     },
     {
