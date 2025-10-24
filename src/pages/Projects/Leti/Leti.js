@@ -26,7 +26,7 @@ const Leti = () => {
                 <li><strong>Tools:</strong> Google Sheets, Figma, Canva</li>
                 <li><strong>Role:</strong> UX / UI Designer, Frontend Developer, Web Designer</li>
                 <li><strong>Project Dates:</strong> May–June 2025</li>
-                <li><strong>Team:</strong> Phohanh Tran, Ruslan Romanenko, Eileen Avci, and Dishita Soni</li>
+                <li><strong>Team:</strong> Eileen Avci</li>
               </ul>
             </div>
           </div>

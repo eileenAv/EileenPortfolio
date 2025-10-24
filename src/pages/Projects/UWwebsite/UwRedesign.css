@@ -86,9 +86,9 @@
 .uwRedesign-role,
 .uwRedesign-process,
 .uwRedesign-results {
-  padding: 2rem 1.5rem;
+  padding: 12px;
   max-width: 1200px;
-  margin: 0 auto 16px;
+  margin: 0 auto 12px;
   position: relative;
   border-radius: 2rem;
 }

@@ -203,9 +203,9 @@
 .project-role,
 .project-process,
 .project-results {
-    padding: var(--section-pad) 1.5rem;
+    padding: 12px;
     max-width: 1200px;
-    margin: 0 auto var(--section-gap);
+    margin: 0 auto 12px;
     position: relative;
     border-radius: 2rem;
 }
@@ -358,7 +358,7 @@ h2::after {
 p {
     color: #444;
     line-height: 1.8;
-    margin-bottom: 16px; 
+    margin-bottom: 10px; 
     font-size: 1.1rem;
 }
 

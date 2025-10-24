@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import Home from "./pages/home.js";
-import About from "./pages/About.js";
+import About from "./pages/About/About.js";
 import Projects from "./pages/Projects.js";
 import Ora from "./pages/Projects/ORA/Ora.js";
 import UwRedesign from "./pages/Projects/UWwebsite/UwRedesign.js";
