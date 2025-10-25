@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// Import your image
-import profileImage from "../assets/profile.jpg"; // Update this with your actual image filename
+import profileImage from "../assets/profile.jpg"; 
 
 function Home() {
   const navigate = useNavigate();
