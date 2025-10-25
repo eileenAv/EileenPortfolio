@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EileenPortfolio/static/css/main.42f6083a.css",
-    "main.js": "/EileenPortfolio/static/js/main.5b0b1f60.js",
+    "main.css": "/EileenPortfolio/static/css/main.d2b13892.css",
+    "main.js": "/EileenPortfolio/static/js/main.b4f2d2a7.js",
     "static/js/453.b11b1699.chunk.js": "/EileenPortfolio/static/js/453.b11b1699.chunk.js",
     "static/media/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.png": "/EileenPortfolio/static/media/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.4aa73ac23707a955e46e.png",
     "static/media/Recording 2025-10-10 at 13.12.11.gif": "/EileenPortfolio/static/media/Recording 2025-10-10 at 13.12.11.01e5f4dd6dd9cd85ca81.gif",
@@ -9,6 +9,7 @@
     "static/media/screencapture-file-C-Users-avcia-Desktop-LETI-AboutPage-html-2025-10-10-15_59_04.png": "/EileenPortfolio/static/media/screencapture-file-C-Users-avcia-Desktop-LETI-AboutPage-html-2025-10-10-15_59_04.ac9e467ebb1fa987567d.png",
     "static/media/profile.jpg": "/EileenPortfolio/static/media/profile.39a8173e6f1b983a83cc.jpg",
     "static/media/screencapture-angespr-github-io-juvo-2025-10-10-12_14_29.png": "/EileenPortfolio/static/media/screencapture-angespr-github-io-juvo-2025-10-10-12_14_29.9056d4749cd2d78685d3.png",
+    "static/media/AboutMe2.jpg": "/EileenPortfolio/static/media/AboutMe2.fc068c00c14ad92cd41b.jpg",
     "static/media/Desktop Mockup final1.jpg": "/EileenPortfolio/static/media/Desktop Mockup final1.6db5a03692a80374a6ba.jpg",
     "static/media/john.png": "/EileenPortfolio/static/media/john.1cfe19b7e878c63e9354.png",
     "static/media/sarah.png": "/EileenPortfolio/static/media/sarah.ba48e0570e44f6407cb5.png",
@@ -23,12 +24,12 @@
     "static/media/ICONS ORIGINAL.png": "/EileenPortfolio/static/media/ICONS ORIGINAL.aaf63a0734300fdc75fc.png",
     "static/media/mainpage.png": "/EileenPortfolio/static/media/mainpage.55e8a930a8c94b0851b3.png",
     "index.html": "/EileenPortfolio/index.html",
-    "main.42f6083a.css.map": "/EileenPortfolio/static/css/main.42f6083a.css.map",
-    "main.5b0b1f60.js.map": "/EileenPortfolio/static/js/main.5b0b1f60.js.map",
+    "main.d2b13892.css.map": "/EileenPortfolio/static/css/main.d2b13892.css.map",
+    "main.b4f2d2a7.js.map": "/EileenPortfolio/static/js/main.b4f2d2a7.js.map",
     "453.b11b1699.chunk.js.map": "/EileenPortfolio/static/js/453.b11b1699.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42f6083a.css",
-    "static/js/main.5b0b1f60.js"
+    "static/css/main.d2b13892.css",
+    "static/js/main.b4f2d2a7.js"
   ]
 }
