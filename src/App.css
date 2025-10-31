@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  background-color: black;
+  background-color: #222;
   padding: 15px 20px;
   display: flex;
   align-items: center;
@@ -75,6 +75,10 @@ body {
 
 .brand-name {
   font-weight: 700;
+  color: white;
+}
+.brand-name:hover {
+  color: #8f3aff;  
 }
 
 .brand-role {

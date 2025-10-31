@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home.js";
 import About from "./pages/About/About.js";
 import Projects from "./pages/Projects.js";
@@ -9,36 +9,14 @@ import Athena from "./pages/Projects/Athena/Athena.js";
 import Leti from "./pages/Projects/Leti/Leti.js";
 import "./App.css";
 import Juvo from "./pages/Projects/Juvo/Juvo.js";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
       <div className="app">
-        {/* Navbar */}
-        <nav className="navbar">
-          <div className="brand">
-            <div className="dot" aria-hidden="true" />
-            <span className="brand-name">Eileen Avci</span>
-          </div>
-
-          <ul>
-            <li>
-              <NavLink to="/" end className="navlink">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className="navlink">
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects" className="navlink">
-                Projects
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
 
         {/* Page Content */}
         <div className="content">
@@ -53,8 +31,10 @@ function App() {
             <Route path="/projects/leti" element={<Leti />} />
           </Routes>
         </div>
+           <Footer />
       </div>
-    </Router>
+    </Router> 
+
   );
 }
 
