@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import aboutImage from "../../assets/AboutMe2.jpg";
+import resume from "../../assets/EileenAvci2025ResumeV8.pdf";
 
 function About() {
   return (
@@ -21,9 +22,21 @@ function About() {
             <p>
               I believe that design choices should be scientific, purpose-driven, and human-centered. When I am not designing or coding, you can find me swimming or drawing. Thanks for stopping by!
             </p>
+             <div className="artist-text">
+            <h1>Artist's Statement</h1>
+        <p>
+I believe design decisions should be grounded in UX research and informed by science, and I am always looking for ways to improve the user experience. This philosophy shapes my design process. Before bringing ideas to life with tools like Figma and React, I focus on understanding users through surveys, user interviews, and online research. Every time I go through that process, I am fascinated by the diverse and unexpected needs and tools of each unique user.   
+        </p>
+        <p>
+          My recent work reflects my growing interest in AI and agent design. I see AI not as a replacement for human creativity, but as a powerful tool that enhances and accelerates it. I strive to integrate AI into my projects as a tool that adapts to diverse users' needs, tailoring the user experience to each user. For example, I am currently working on my capstone project—an AI-powered scheduler—designed to help users automate employee scheduling, taking into account each employee’s availability preferences.
+        </p>
+        
+      <a href={resume} download="EileenAvci2025Resume.pdf" className="download-resume-btn">Download My Resume</a>
+
+      </div>
           </div>
         </div>
-        <div className="artists-statement">
+        {/* <div className="artists-statement">
           <div className="artist-text">
             <h1>Artist's Statement</h1>
         <p>
@@ -32,12 +45,12 @@ I believe design decisions should be grounded in UX research and informed by sci
         <p>
           My recent work reflects my growing interest in AI and agent design. I see AI not as a replacement for human creativity, but as a powerful tool that enhances and accelerates it. I strive to integrate AI into my projects as a tool that adapts to diverse users' needs, tailoring the user experience to each user. For example, I am currently working on my capstone project—an AI-powered scheduler—designed to help users automate employee scheduling, taking into account each employee’s availability preferences.
         </p>
-      </div>
-      </div>
-      </div>
+        
+      <a href={resume} download="EileenAvci2025Resume.pdf" className="download-resume-btn">Download My Resume</a>
 
-      
-
+      </div>
+      </div> */}
+      </div>
     </div>
     
   );
