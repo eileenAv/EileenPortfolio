@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import aboutImage from "../../assets/AboutMe2.jpg";
-import resume from "../../assets/EileenAvci2025ResumeV8.pdf";
+import resume from "../../assets/EileenAvci2025resume.pdf";
 
 function About() {
   return (
