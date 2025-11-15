@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EileenPortfolio/static/css/main.3e2013a4.css",
-    "main.js": "/EileenPortfolio/static/js/main.a283b206.js",
+    "main.css": "/EileenPortfolio/static/css/main.a341b802.css",
+    "main.js": "/EileenPortfolio/static/js/main.2694c465.js",
     "static/js/453.b11b1699.chunk.js": "/EileenPortfolio/static/js/453.b11b1699.chunk.js",
     "static/media/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.png": "/EileenPortfolio/static/media/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.4aa73ac23707a955e46e.png",
     "static/media/Recording 2025-10-10 at 13.12.11.gif": "/EileenPortfolio/static/media/Recording 2025-10-10 at 13.12.11.01e5f4dd6dd9cd85ca81.gif",
@@ -26,12 +26,12 @@
     "static/media/ICONS ORIGINAL.png": "/EileenPortfolio/static/media/ICONS ORIGINAL.aaf63a0734300fdc75fc.png",
     "static/media/mainpage.png": "/EileenPortfolio/static/media/mainpage.55e8a930a8c94b0851b3.png",
     "index.html": "/EileenPortfolio/index.html",
-    "main.3e2013a4.css.map": "/EileenPortfolio/static/css/main.3e2013a4.css.map",
-    "main.a283b206.js.map": "/EileenPortfolio/static/js/main.a283b206.js.map",
+    "main.a341b802.css.map": "/EileenPortfolio/static/css/main.a341b802.css.map",
+    "main.2694c465.js.map": "/EileenPortfolio/static/js/main.2694c465.js.map",
     "453.b11b1699.chunk.js.map": "/EileenPortfolio/static/js/453.b11b1699.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e2013a4.css",
-    "static/js/main.a283b206.js"
+    "static/css/main.a341b802.css",
+    "static/js/main.2694c465.js"
   ]
 }
