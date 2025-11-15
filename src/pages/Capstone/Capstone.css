@@ -1,0 +1,75 @@
+.capstone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.capstone-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.capstone-text {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.capstone-button {
+    padding: 0.85rem 1.6rem;
+    font-size: 1rem;
+    background-color: #722dcc; /* site purple */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.22s ease;
+    min-width: 120px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(114,45,204,0.12);
+}
+
+.capstone-button:hover {
+    background-color: #7B1FFF; /* lighter purple on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(114,45,204,0.18);
+}
+
+.capstone-button:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+    .capstone-title {
+        font-size: 2rem;
+    }
+    
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .capstone-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

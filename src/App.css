@@ -14,15 +14,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; 
+  flex-wrap: wrap; /* allow brand and nav to wrap when space is limited */
 }
 
-.navbar ul {
+.navbar > ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
   gap: 20px;
-  justify-content: flex-end; 
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap; /* allow items to wrap instead of overflowing */
 }
 
 .navbar a {
@@ -32,6 +35,17 @@ body {
   padding: 6px 4px;
   transition: all 0.3s ease;
   position: relative;
+}
+
+/* Ensure elements using the .navlink class (anchors and spans) share the same styling */
+.navlink {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
 
 .navbar a:hover {
@@ -66,6 +80,15 @@ body {
   color: white;
 }
 
+/* give brand and nav list flexible behavior so they don't overflow */
+.brand {
+  flex: 0 0 auto;
+}
+
+.navbar > ul {
+  flex: 1 1 auto;
+}
+
 .brand .dot {
   width: 10px;
   height: 10px;
@@ -79,6 +102,18 @@ body {
 }
 .brand-name:hover {
   color: #8f3aff;  
+}
+
+/* Make dropdown nav item align inline with other nav items */
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown trigger the same as other nav links */
+.nav-item > .navlink {
+  color: white;
+  padding: 6px 4px;
 }
 
 .brand-role {
@@ -213,5 +248,87 @@ body {
   width: 100%;
   height: 100%;
   background-color: #e0e0e0;
+}
+
+/* Dropdown menu for navbar (Capstone) */
+.nav-item {
+  position: relative;
+}
+
+.nav-item .navlink {
+  cursor: pointer;
+}
+
+/* dropdown hidden by default; use opacity/visibility so it doesn't affect layout */
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background-color: #222;
+  padding: 8px 0;
+  border-radius: 8px;
+  min-width: 200px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  z-index: 40;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
+  pointer-events: none;
+}
+
+/* Make dropdown menu stack items vertically */
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu .navlink {
+  display: block;
+  padding: 8px 16px;
+  color: #fff;
+}
+
+.dropdown-menu .navlink:hover {
+  background-color: rgba(114,45,204,0.08);
+  color: #f3e8ff;
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Responsive navbar: stack nav items on small screens to prevent overflow */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 14px;
+  }
+
+  .navbar > ul {
+    flex-direction: column;
+    align-items: flex-start; /* stack and align left so items don't overflow */
+    gap: 8px;
+    width: 100%;
+  }
+
+  /* Make dropdown menus align to the right edge on mobile so they remain visible */
+  .dropdown-menu {
+    left: auto;
+    right: 0;
+    top: calc(100% + 6px);
+    min-width: 160px;
+  }
+
+  .nav-item > .navlink {
+    padding: 8px 6px;
+  }
 }
 

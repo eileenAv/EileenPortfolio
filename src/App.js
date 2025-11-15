@@ -11,6 +11,11 @@ import "./App.css";
 import Juvo from "./pages/Projects/Juvo/Juvo.js";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import CapstoneLanding from "./pages/Capstone/CapstoneLanding.js";
+import OverallCapstone from "./pages/Capstone/OverallCapstone";
+import TheUser from "./pages/Capstone/TheUser";
+import CapstoneExperience from "./pages/Capstone/CapstoneExperience";
+import AnnotatedBibliography from "./pages/Capstone/AnnotatedBibliography";
 
 function App() {
   return (
@@ -29,6 +34,11 @@ function App() {
             <Route path="/projects/uw-redesign" element={<UwRedesign />} />
             <Route path="/projects/athena" element={<Athena />} />
             <Route path="/projects/leti" element={<Leti />} />
+            <Route path="/capstone" element={<CapstoneLanding />} />
+            <Route path="/capstone/overall" element={<OverallCapstone />} />
+            <Route path="/capstone/user" element={<TheUser />} />
+            <Route path="/capstone/experience" element={<CapstoneExperience />} />
+            <Route path="/capstone/bibliography" element={<AnnotatedBibliography />} />
           </Routes>
         </div>
            <Footer />
