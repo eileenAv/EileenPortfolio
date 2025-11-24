@@ -16,6 +16,10 @@ import OverallCapstone from "./pages/Capstone/Overall Capstone/OverallCapstone.j
 import TheUser from "./pages/Capstone/TheUser/TheUser.js";
 import CapstoneExperience from "./pages/Capstone/TheCapstoneExperince/CapstoneExperience.js";
 import AnnotatedBibliography from "./pages/Capstone/AnnotatedBibliography/AnnotatedBibliography.js";
+import TheAppDesign from "./pages/Capstone/TheCapstoneExperince/TheAppDesign/TheAppDesign.js";
+import DevelopmentOfTheUI from "./pages/Capstone/TheCapstoneExperince/DevelopmentOfTheUI/DevelopmentOfTheUI.js";
+import DevelopmentOfTheBackend from "./pages/Capstone/TheCapstoneExperince/DevelopmentOfTheBackend/DevelopmentOfTheBackend.js";
+import TheFinalProduct from "./pages/Capstone/TheCapstoneExperince/TheFinalProduct/TheFinalProduct.js";
 
 function App() {
   return (
@@ -38,6 +42,10 @@ function App() {
             <Route path="/capstone/overall" element={<OverallCapstone />} />
             <Route path="/capstone/user" element={<TheUser />} />
             <Route path="/capstone/experience" element={<CapstoneExperience />} />
+            <Route path="/capstone/experience/app-design" element={<TheAppDesign />} />
+            <Route path="/capstone/experience/ui-development" element={<DevelopmentOfTheUI />} />
+            <Route path="/capstone/experience/backend-development" element={<DevelopmentOfTheBackend />} />
+            <Route path="/capstone/experience/final-product" element={<TheFinalProduct />} />
             <Route path="/capstone/bibliography" element={<AnnotatedBibliography />} />
           </Routes>
         </div>
