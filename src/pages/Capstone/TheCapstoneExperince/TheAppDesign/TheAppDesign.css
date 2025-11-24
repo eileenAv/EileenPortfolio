@@ -4,25 +4,99 @@
     margin: 0 auto;
 }
 
+.app-design-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
 .app-design-title {
     font-size: 2.5rem;
     font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.app-design-icon {
+    font-size: 2.5rem;
     color: #722dcc;
-    margin-bottom: 2rem;
+}
+
+.app-design-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.app-design-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.app-design-section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #722dcc;
+    margin-bottom: 1rem;
+    margin-top: 0;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid #4A90E2;
     display: inline-block;
+    background-color: transparent;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+    text-decoration-color: transparent;
 }
 
-.app-design-text {
+.app-design-section-text {
     font-size: 1.1rem;
     color: #555;
     line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+}
+
+.app-design-image-container {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.app-design-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
 }
 
+.app-design-caption {
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
+    margin: 0;
+}
+
 @media (max-width: 768px) {
+    .app-design-header {
+        flex-direction: row;
+    }
+    
     .app-design-title {
         font-size: 2rem;
+    }
+    
+    .app-design-icon {
+        font-size: 2rem;
+    }
+    
+    .app-design-section {
+        padding: 1.5rem;
+    }
+    
+    .app-design-section-title {
+        font-size: 1.5rem;
     }
 }

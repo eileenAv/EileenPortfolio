@@ -19,7 +19,7 @@ export default function CapstoneExperience(){
           <div className="timeline-content" onClick={() => navigate('/capstone/experience/app-design')}>
             <h2 className="timeline-title" spellCheck="false">The App Design</h2>
             <p className="timeline-text">
-              Add content about the initial app design phase, including wireframes, user flows, and design decisions.
+              Click here to learn more about the system architecture.
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function CapstoneExperience(){
           <div className="timeline-content" onClick={() => navigate('/capstone/experience/ui-development')}>
             <h2 className="timeline-title" spellCheck="false">Development of the UI</h2>
             <p className="timeline-text">
-              Add content about building the user interface, including React components, styling, and front-end architecture.
+              Click here to learn more about the user interface development.
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function CapstoneExperience(){
           <div className="timeline-content" onClick={() => navigate('/capstone/experience/backend-development')}>
             <h2 className="timeline-title" spellCheck="false">Development of the Backend</h2>
             <p className="timeline-text">
-              Add content about backend development, including API integration, database design, and server-side logic.
+              Click here to learn more about backend development.
             </p>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function CapstoneExperience(){
           <div className="timeline-content" onClick={() => navigate('/capstone/experience/final-product')}>
             <h2 className="timeline-title" spellCheck="false">The Final Product</h2>
             <p className="timeline-text">
-              Add content about the completed application, testing, deployment, and final results.
+              Click here to learn more about the completed application.
             </p>
           </div>
         </div>
