@@ -12,10 +12,10 @@ import Juvo from "./pages/Projects/Juvo/Juvo.js";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import CapstoneLanding from "./pages/Capstone/CapstoneLanding.js";
-import OverallCapstone from "./pages/Capstone/OverallCapstone";
+import OverallCapstone from "./pages/Capstone/Overall Capstone/OverallCapstone.js";
 import TheUser from "./pages/Capstone/TheUser/TheUser.js";
 import CapstoneExperience from "./pages/Capstone/CapstoneExperience";
-import AnnotatedBibliography from "./pages/Capstone/AnnotatedBibliography";
+import AnnotatedBibliography from "./pages/Capstone/AnnotatedBibliography/AnnotatedBibliography.js";
 
 function App() {
   return (
