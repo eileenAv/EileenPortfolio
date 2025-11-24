@@ -7,7 +7,10 @@ const CapstoneLanding = () => {
 
     return (
         <div className="capstone-container">
-            <h1 className="capstone-title">My Capstone</h1>
+            <div className="capstone-header">
+                <img src={require('../../assets/Capstone/Capstonelogo.jpg')} alt="Capstone Project" className="capstone-header-image" />
+                <h1 className="capstone-title">My Capstone</h1>
+            </div>
             <p className="capstone-text">Here is the landing page of my capstone project. I have decided to create an AI-powered scheduler that uses employee preferences to schedule shifts. Click on the buttons below to explore different sections of the project.</p>
             <div className="buttons-container">
                 <button className="capstone-button" onClick={() => navigate('/capstone/overall')}>Overall Capstone</button>

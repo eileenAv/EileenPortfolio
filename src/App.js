@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import CapstoneLanding from "./pages/Capstone/CapstoneLanding.js";
 import OverallCapstone from "./pages/Capstone/OverallCapstone";
-import TheUser from "./pages/Capstone/TheUser";
+import TheUser from "./pages/Capstone/TheUser/TheUser.js";
 import CapstoneExperience from "./pages/Capstone/CapstoneExperience";
 import AnnotatedBibliography from "./pages/Capstone/AnnotatedBibliography";
 

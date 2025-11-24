@@ -1,0 +1,83 @@
+/* The User Page Styles */
+.user-container {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.user-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.user-icon {
+    font-size: 2.5rem;
+    color: #722dcc;
+}
+
+.user-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.user-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #722dcc;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #4A90E2;
+    display: inline-block;
+    background-color: transparent;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+    text-decoration-color: transparent;
+}
+
+.user-section-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .user-header {
+        flex-direction: row;
+    }
+    
+    .user-title {
+        font-size: 2rem;
+    }
+    
+    .user-icon {
+        font-size: 2rem;
+    }
+    
+    .user-section {
+        padding: 1.5rem;
+    }
+    
+    .user-section-title {
+        font-size: 1.5rem;
+    }
+}
