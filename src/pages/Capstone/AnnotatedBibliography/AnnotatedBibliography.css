@@ -1,0 +1,83 @@
+/* Annotated Bibliography Page Styles */
+.bibliography-container {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bibliography-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.bibliography-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.bibliography-icon {
+    font-size: 2.5rem;
+    color: #722dcc;
+}
+
+.bibliography-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.bibliography-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.bibliography-section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #722dcc;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #4A90E2;
+    display: inline-block;
+    background-color: transparent;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+    text-decoration-color: transparent;
+}
+
+.bibliography-section-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .bibliography-header {
+        flex-direction: row;
+    }
+    
+    .bibliography-title {
+        font-size: 2rem;
+    }
+    
+    .bibliography-icon {
+        font-size: 2rem;
+    }
+    
+    .bibliography-section {
+        padding: 1.5rem;
+    }
+    
+    .bibliography-section-title {
+        font-size: 1.5rem;
+    }
+}

@@ -14,7 +14,7 @@ import Navbar from "./components/Navbar";
 import CapstoneLanding from "./pages/Capstone/CapstoneLanding.js";
 import OverallCapstone from "./pages/Capstone/Overall Capstone/OverallCapstone.js";
 import TheUser from "./pages/Capstone/TheUser/TheUser.js";
-import CapstoneExperience from "./pages/Capstone/CapstoneExperience";
+import CapstoneExperience from "./pages/Capstone/TheCapstoneExperince/CapstoneExperience.js";
 import AnnotatedBibliography from "./pages/Capstone/AnnotatedBibliography/AnnotatedBibliography.js";
 
 function App() {
