@@ -14,22 +14,22 @@ export default function TheAppDesign() {
         <div className="app-design-section">
           <h2 className="app-design-section-title" spellCheck="false">Initial System Architecture</h2>
           <p className="app-design-section-text">
-            Add content about the initial system architecture, wireframes, and early concepts.
+            At first, I thought that I would need only one database and folder to store the data. Below is the inital system architecture. I assumed that the data will just be pulled from the fronted and directly sent to the AI.
           </p>
           <div className="app-design-image-container">
-            <img src="" alt="Initial System Architecture" className="app-design-image" />
-            <p className="app-design-caption">Caption for initial system architecture</p>
+            <img src={require('../../../../assets/Capstone/previousDiagram.png')} alt="Initial System Architecture" className="app-design-image" />
+            <p className="app-design-caption">Initial System Architecture Diagram</p>
           </div>
         </div>
         
         <div className="app-design-section">
           <h2 className="app-design-section-title" spellCheck="false">Current System Architecture</h2>
           <p className="app-design-section-text">
-            Add content about the current system architecture and polished designs.
+            After some more brainstorming and help from my expert, I realized that it would be better if I stored all the data at the database first, and then have AI pull the storedemployee data from the database. Then the AI would send the new midified data back to the database, where it would be later pulled to be used by the frontend. By implementig these changes to the final system architecture, I had a better idea of what my app would look like. I also added what output I wanted from the AI.
           </p>
           <div className="app-design-image-container">
-            <img src="" alt="Current System Architecture" className="app-design-image" />
-            <p className="app-design-caption">Caption for current system architecture</p>
+            <img src={require('../../../../assets/Capstone/finalDiagram.png')} alt="Current System Architecture" className="app-design-image" />
+            <p className="app-design-caption">Current System Architecture Diagram</p>
           </div>
         </div>
         
