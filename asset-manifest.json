@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EileenPortfolio/static/css/main.a341b802.css",
-    "main.js": "/EileenPortfolio/static/js/main.2694c465.js",
+    "main.css": "/EileenPortfolio/static/css/main.1b086ca9.css",
+    "main.js": "/EileenPortfolio/static/js/main.cd8af5de.js",
     "static/js/453.b11b1699.chunk.js": "/EileenPortfolio/static/js/453.b11b1699.chunk.js",
     "static/media/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.png": "/EileenPortfolio/static/media/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.4aa73ac23707a955e46e.png",
     "static/media/Recording 2025-10-10 at 13.12.11.gif": "/EileenPortfolio/static/media/Recording 2025-10-10 at 13.12.11.01e5f4dd6dd9cd85ca81.gif",
@@ -15,23 +15,32 @@
     "static/media/sarah.png": "/EileenPortfolio/static/media/sarah.ba48e0570e44f6407cb5.png",
     "static/media/ThisisTheHero.png": "/EileenPortfolio/static/media/ThisisTheHero.86ddee93eff0a40687c5.png",
     "static/media/cards.png": "/EileenPortfolio/static/media/cards.94f02c9f0d8d3414c2dc.png",
+    "static/media/promptFinal.jpg": "/EileenPortfolio/static/media/promptFinal.c7809929f32f8bd7e30e.jpg",
+    "static/media/Capstonelogo.jpg": "/EileenPortfolio/static/media/Capstonelogo.f55a0983d969a7886ed2.jpg",
+    "static/media/databaseScreenshot.jpg": "/EileenPortfolio/static/media/databaseScreenshot.722ad2753971002f88ba.jpg",
     "static/media/sonuclar2.png": "/EileenPortfolio/static/media/sonuclar2.2c21524d40a98ce1d047.png",
     "static/media/gains.png": "/EileenPortfolio/static/media/gains.69abb85e812e5ba602d1.png",
     "static/media/athenaLogo.png": "/EileenPortfolio/static/media/athenaLogo.9c2fc27a7e57ad054bac.png",
     "static/media/card.png": "/EileenPortfolio/static/media/card.f81487e2441d5dd1dcd0.png",
     "static/media/EileenAvci2025resume.pdf": "/EileenPortfolio/static/media/EileenAvci2025resume.053a1054686beb4305b7.pdf",
     "static/media/sonuclar1.png": "/EileenPortfolio/static/media/sonuclar1.bf088826c8df66ed4802.png",
+    "static/media/finalDiagram.png": "/EileenPortfolio/static/media/finalDiagram.82803b527c57bc24ecc7.png",
+    "static/media/Mockup2Superviors.png": "/EileenPortfolio/static/media/Mockup2Superviors.514862f3ecc9f609276e.png",
+    "static/media/previousDiagram.png": "/EileenPortfolio/static/media/previousDiagram.56c39afe2b8bf14d93fa.png",
     "static/media/ORAlogo.jpg": "/EileenPortfolio/static/media/ORAlogo.73a8e104258b34ac0d73.jpg",
+    "static/media/avalbilityForm.jpg": "/EileenPortfolio/static/media/avalbilityForm.8e8d2a652be2dc2cdc98.jpg",
     "static/media/doors.png": "/EileenPortfolio/static/media/doors.01d3616d96232b24ea77.png",
+    "static/media/supervisor interface UI mockup.png": "/EileenPortfolio/static/media/supervisor interface UI mockup.397fa0737365fa9b395b.png",
     "static/media/ICONS ORIGINAL.png": "/EileenPortfolio/static/media/ICONS ORIGINAL.aaf63a0734300fdc75fc.png",
+    "static/media/Picture3.jpg": "/EileenPortfolio/static/media/Picture3.178e59fe039f5985b520.jpg",
     "static/media/mainpage.png": "/EileenPortfolio/static/media/mainpage.55e8a930a8c94b0851b3.png",
     "index.html": "/EileenPortfolio/index.html",
-    "main.a341b802.css.map": "/EileenPortfolio/static/css/main.a341b802.css.map",
-    "main.2694c465.js.map": "/EileenPortfolio/static/js/main.2694c465.js.map",
+    "main.1b086ca9.css.map": "/EileenPortfolio/static/css/main.1b086ca9.css.map",
+    "main.cd8af5de.js.map": "/EileenPortfolio/static/js/main.cd8af5de.js.map",
     "453.b11b1699.chunk.js.map": "/EileenPortfolio/static/js/453.b11b1699.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a341b802.css",
-    "static/js/main.2694c465.js"
+    "static/css/main.1b086ca9.css",
+    "static/js/main.cd8af5de.js"
   ]
 }
