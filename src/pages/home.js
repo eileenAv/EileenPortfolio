@@ -11,6 +11,10 @@ import "./home.css";
 function Home() {
   const navigate = useNavigate();
   const name = "Eileen Avci";
+  const isMobile = window.innerWidth <= 768;
+  const stickerWidth = isMobile ? 200 : 500;
+  const stickerX = isMobile ? window.innerWidth * 0.05 : window.innerWidth * 0.10;
+  const stickerY = isMobile ? window.innerHeight * 0.05 : window.innerHeight * 0.15;
 
   return (
     <>
@@ -69,25 +73,26 @@ function Home() {
           <div style={{ position: 'relative', width: '100%', height: '100%', pointerEvents: 'none' }}>
             <div style={{ 
               position: 'absolute',
-              left: `calc(${window.innerWidth * 0.10}px + 150px)`,
-              top: `calc(${window.innerHeight * 0.15}px + 40px)`,
+              left: isMobile ? `calc(${stickerX}px + 60px)` : `calc(${stickerX}px + 150px)`,
+              top: `calc(${stickerY}px + 40px)`,
               color: 'rgba(255, 255, 255, 0.8)',
-              fontSize: '14px',
+              fontSize: isMobile ? '11px' : '14px',
               fontWeight: '500',
               pointerEvents: 'none',
               letterSpacing: '0.3px',
               textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)',
-              whiteSpace: 'nowrap'
+              whiteSpace: 'nowrap',
+              display: isMobile ? 'none' : 'block'
             }}>
               Try dragging me around!
             </div>
             <StickerPeel
               imageSrc={catSticker}
-              width={500}
+              width={stickerWidth}
               rotate={15}
               peelBackHoverPct={35}
               peelBackActivePct={45}
-              initialPosition={{ x: window.innerWidth * 0.10, y: window.innerHeight * 0.15 }}
+              initialPosition={{ x: stickerX, y: stickerY }}
               peelDirection={45}
               shadowIntensity={0.7}
               lightingIntensity={0.15}

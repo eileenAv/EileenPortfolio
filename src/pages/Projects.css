@@ -105,3 +105,65 @@
   color: #722dcc;
   border-radius: 4px;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .section {
+    padding: 20px 15px;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .proj-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .proj-card {
+    min-width: 100%;
+    padding: 20px;
+  }
+
+  .proj-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .proj-card p {
+    font-size: 0.9rem;
+  }
+
+  .proj-preview img {
+    height: 150px;
+  }
+
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 15px 10px;
+  }
+
+  .section h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+
+  .proj-card {
+    padding: 15px;
+  }
+
+  .proj-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .proj-card p {
+    font-size: 0.85rem;
+  }
+}

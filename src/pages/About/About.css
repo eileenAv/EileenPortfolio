@@ -96,23 +96,78 @@
 }
 
 @media (max-width: 768px) {
+  .about-bio {
+    padding: 20px 15px;
+  }
+
+  .bio-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
   .about-container {
     flex-direction: column;
     text-align: center;
   }
 
   .about-text {
-    max-width: 90%;
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .artist-text {
+    max-width: 100%;
+  }
+
+  .about-image {
+    margin: 0;
   }
 
   .about-image img {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
+    margin-top: 20px;
   }
 
   .download-resume-btn {
     font-size: 1rem;
     padding: 10px 20px;
-    margin: 30px;
+    margin: 20px auto;
+    display: block;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-bio {
+    padding: 15px 10px;
+  }
+
+  .about-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .download-resume-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 }

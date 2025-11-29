@@ -225,6 +225,20 @@ body {
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.5);
 }
 
+@media (max-width: 768px) {
+  .primary-btn, .secondary-btn {
+    padding: 10px 24px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .primary-btn, .secondary-btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+}
+
 .image-circle {
   flex-shrink: 0;
   width: 400px;
