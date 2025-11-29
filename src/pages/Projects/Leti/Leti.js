@@ -68,10 +68,10 @@ const Leti = () => {
           Below is the final looks of the websites that I designed and coded for LETI.
         </p>
         <div className="leti-images">
-          <div className="leti-images__container" onClick={() => setFullScreenImage(require("../../../assets/ReDesign/Desktop Mockup final1.jpg"))}>
+          <div className="leti-images__container" onClick={() => setFullScreenImage(require("../../../assets/leti/screencapture-file-C-Users-avcia-Desktop-LETI-AboutPage-html-2025-10-10-15_59_04.png"))}>
             <img
               src={require("../../../assets/leti/screencapture-file-C-Users-avcia-Desktop-LETI-AboutPage-html-2025-10-10-15_59_04.png")}
-              alt="UW Redesign Screenshot"
+              alt="LETI About Page"
               className="leti-images__img"
             />
             <div className="leti-images__overlay">
@@ -79,10 +79,10 @@ const Leti = () => {
             </div>
           </div>
 
-          <div className="leti-images__container" onClick={() => setFullScreenImage(require("../../../assets/ReDesign/ICONS ORIGINAL.png"))}>
+          <div className="leti-images__container" onClick={() => setFullScreenImage(require("../../../assets/leti/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.png"))}>
             <img
               src={require("../../../assets/leti/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.png")}
-              alt="UW Redesign Screenshot"
+              alt="LETI Programs Page"
               className="leti-images__img"
             />
             <div className="leti-images__overlay">

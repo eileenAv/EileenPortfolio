@@ -51,7 +51,7 @@ function About() {
           <div className="about-text">
             <h1>Bio</h1>
             <p>
-              Hi there my name is Eileen Avci. I am an enthusiastic creator passionate about UX design, AI, and Frontend engineering, based in Seattle, WA. I am currently a senior at the University of Washington Bothell, majoring in Applied Computing and Minoring in Visual Arts and Media, graduating in March 2026.
+              Hi there my name is Eileen Avci. I am an enthusiastic creator passionate about UX design, AI, and Frontend engineering, based in Seattle, WA. I am currently a senior at the University of Washington Bothell, majoring in Applied Computing and Minoring in Visual Arts and Media, graduating in March 2026. My work consists of designing and developing websites and apps that are both functional and aesthetically pleasing.
             </p>
             <p>
               I believe that design choices should be scientific, purpose-driven, and human-centered. When I am not designing or coding, you can find me swimming or drawing. Thanks for stopping by!
