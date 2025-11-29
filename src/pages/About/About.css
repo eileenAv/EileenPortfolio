@@ -8,7 +8,7 @@
   gap: 30px;
   background-color: #fafafa;
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 .artists-statement {
     align-items: center;
@@ -31,6 +31,8 @@
 
 .about-image {
   flex-shrink: 0;
+  perspective: 1000px;
+  cursor: pointer;
 }
 
 .about-image img {
@@ -39,6 +41,13 @@
   height: 500px;
   object-fit: cover;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.1s ease-out, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.about-image:hover img {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .about-text {

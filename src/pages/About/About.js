@@ -1,15 +1,49 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./About.css";
 import aboutImage from "../../assets/AboutMe2.jpg";
 import resume from "../../assets/EileenAvci2025resume.pdf";
 
 function About() {
+  const imageWrapperRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const wrapper = imageWrapperRef.current;
+    const image = imageRef.current;
+    if (!wrapper || !image) return;
+
+    const handleMouseMove = (e) => {
+      const rect = wrapper.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * 3;
+      const rotateY = ((x - centerX) / centerX) * -3;
+      
+      image.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    };
+
+    const handleMouseLeave = () => {
+      image.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+    };
+
+    wrapper.addEventListener('mousemove', handleMouseMove);
+    wrapper.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      wrapper.removeEventListener('mousemove', handleMouseMove);
+      wrapper.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
+
   return (
     <div className="about-section">
       <div className="about-bio">
         <div className="bio-container">
-          <div className="about-image">
+          <div className="about-image" ref={imageWrapperRef}>
             <img
+              ref={imageRef}
               src={aboutImage}
               alt="about picture"
             />
