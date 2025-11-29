@@ -13,8 +13,8 @@ function Home() {
   const name = "Eileen Avci";
   const isMobile = window.innerWidth <= 768;
   const stickerWidth = isMobile ? 200 : 500;
-  const stickerX = isMobile ? window.innerWidth * 0.05 : window.innerWidth * 0.10;
-  const stickerY = isMobile ? window.innerHeight * 0.05 : window.innerHeight * 0.15;
+  const stickerX = isMobile ? window.innerWidth - 220 : window.innerWidth * 0.10;
+  const stickerY = isMobile ? 20 : window.innerHeight * 0.15;
 
   return (
     <>
