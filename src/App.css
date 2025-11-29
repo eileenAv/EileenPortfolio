@@ -277,7 +277,8 @@ body {
 .dropdown-menu {
   position: absolute;
   top: calc(100% + 8px);
-  left: 0;
+  left: auto;
+  right: 0;
   background-color: #222;
   padding: 8px 0;
   border-radius: 8px;
