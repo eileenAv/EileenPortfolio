@@ -63,7 +63,7 @@ function Projects() {
             className="proj-card"
             onClick={() => navigate(project.route)}
           >
-            <h3>{project.title}</h3>
+            <h3 data-project={project.title.toLowerCase().includes('juvo') ? 'juvo' : ''}>{project.title}</h3>
             <p>{project.description}</p>
             
             <div className="proj-preview">

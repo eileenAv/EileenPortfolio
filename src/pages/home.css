@@ -1,0 +1,86 @@
+/* Optional: if your hero is dark, this looks very good */
+.hero {
+  background: radial-gradient(circle at top, #0f172a 0, #020617 40%, #000 100%);
+  color: #e5e7eb;
+}
+
+/* Container for name */
+.bubble-name {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0 4px;
+  cursor: pointer;
+}
+
+/* Base neon bubble letter (idle: no motion, light glow) */
+.letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f9fafb;
+  background: rgba(15, 23, 42, 0.7); /* dark inner bubble */
+  border: 2px solid rgba(56, 189, 248, 0.7); /* neon cyan outline */
+  box-shadow:
+    0 0 8px rgba(56, 189, 248, 0.7),
+    0 0 16px rgba(147, 51, 234, 0.5);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+/* “Space” between first and last name */
+.letter.space {
+  width: 22px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+/* Only when hovering over the name: animate + stronger neon */
+.bubble-name:hover .letter {
+  animation: neon-pop 0.45s ease-out;
+}
+
+/* Stagger so letters pop in sequence */
+.bubble-name:hover .letter:nth-child(1)  { animation-delay: 0s; }
+.bubble-name:hover .letter:nth-child(2)  { animation-delay: 0.03s; }
+.bubble-name:hover .letter:nth-child(3)  { animation-delay: 0.06s; }
+.bubble-name:hover .letter:nth-child(4)  { animation-delay: 0.09s; }
+.bubble-name:hover .letter:nth-child(5)  { animation-delay: 0.12s; }
+.bubble-name:hover .letter:nth-child(6)  { animation-delay: 0.15s; }
+.bubble-name:hover .letter:nth-child(8)  { animation-delay: 0.18s; }
+.bubble-name:hover .letter:nth-child(9)  { animation-delay: 0.21s; }
+.bubble-name:hover .letter:nth-child(10) { animation-delay: 0.24s; }
+.bubble-name:hover .letter:nth-child(11) { animation-delay: 0.27s; }
+
+/* Neon pop animation (only runs on hover) */
+@keyframes neon-pop {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow:
+      0 0 8px rgba(56, 189, 248, 0.7),
+      0 0 16px rgba(147, 51, 234, 0.5);
+  }
+  35% {
+    transform: translateY(-10px) scale(1.1);
+    background: radial-gradient(circle at 30% 30%, #22d3ee, #a855f7 60%, #581c87);
+    border-color: #e5e7eb;
+    box-shadow:
+      0 0 16px rgba(56, 189, 248, 0.9),
+      0 0 32px rgba(236, 72, 153, 0.9);
+  }
+  65% {
+    transform: translateY(4px) scale(0.96);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}

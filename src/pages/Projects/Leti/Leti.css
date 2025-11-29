@@ -58,8 +58,8 @@
 .leti-hero__details { margin-top: 12px; color: #F5F1EA; }
 .leti-list { list-style: none; padding: 0; margin-bottom: 1.5rem; }
 .leti-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.8rem; font-size: 1.1rem; }
-.leti-list li::before { content: '★'; position: absolute; left: 0; color: #6A0DAD; font-size: 1rem; }
-.leti-list strong { color: #000000; font-weight: 500; }
+.leti-list li::before { content: '★'; position: absolute; left: 0; color: #ffffff; font-size: 1rem; }
+.leti-list strong { color: #e587ff; font-weight: 500; }
 
 .leti-gif {
   width: 100%;
@@ -134,7 +134,7 @@
   display: flex; align-items: center; justify-content: center;
 }
 
-.leti-text { color: #2D1B3B; line-height: 1.8; margin-bottom: 10px; font-size: 1.1rem; }
+.leti-text { color: #8826d2; line-height: 1.8; margin-bottom: 10px; font-size: 1.1rem; }
 
 .leti-final { padding: 2.5rem 1.5rem; max-width: 1200px; margin: 0 auto 24px; }
 

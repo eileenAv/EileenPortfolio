@@ -83,12 +83,12 @@ const Athena = () => {
         <p>Based on the research we conducted, we created two main personas that represented our target users. </p>
           <div className="athena-images">
           <img
-            src={require("../../../assets/Athena/john.png")}
+            src={require("../../../assets/Athena/persona1.jpg")}
             alt="Profile screenshot"
             className="athena-images__img"
           />
            <img
-            src={require("../../../assets/Athena/sarah.png")}
+            src={require("../../../assets/Athena/persona2.jpg")}
             alt="Profile screenshot"
             className="athena-images__img"
           />
