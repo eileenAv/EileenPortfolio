@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EileenPortfolio/static/css/main.1b086ca9.css",
-    "main.js": "/EileenPortfolio/static/js/main.cd8af5de.js",
+    "main.css": "/EileenPortfolio/static/css/main.858ef67a.css",
+    "main.js": "/EileenPortfolio/static/js/main.3edd9d45.js",
     "static/js/453.b11b1699.chunk.js": "/EileenPortfolio/static/js/453.b11b1699.chunk.js",
     "static/media/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.png": "/EileenPortfolio/static/media/screencapture-file-C-Users-avcia-Desktop-LETI-ProgramsPagesetup-html-2025-10-10-16_00_38.4aa73ac23707a955e46e.png",
     "static/media/Recording 2025-10-10 at 13.12.11.gif": "/EileenPortfolio/static/media/Recording 2025-10-10 at 13.12.11.01e5f4dd6dd9cd85ca81.gif",
@@ -11,9 +11,10 @@
     "static/media/screencapture-angespr-github-io-juvo-2025-10-10-12_14_29.png": "/EileenPortfolio/static/media/screencapture-angespr-github-io-juvo-2025-10-10-12_14_29.9056d4749cd2d78685d3.png",
     "static/media/AboutMe2.jpg": "/EileenPortfolio/static/media/AboutMe2.fc068c00c14ad92cd41b.jpg",
     "static/media/Desktop Mockup final1.jpg": "/EileenPortfolio/static/media/Desktop Mockup final1.6db5a03692a80374a6ba.jpg",
-    "static/media/john.png": "/EileenPortfolio/static/media/john.1cfe19b7e878c63e9354.png",
-    "static/media/sarah.png": "/EileenPortfolio/static/media/sarah.ba48e0570e44f6407cb5.png",
     "static/media/ThisisTheHero.png": "/EileenPortfolio/static/media/ThisisTheHero.86ddee93eff0a40687c5.png",
+    "static/media/persona2.jpg": "/EileenPortfolio/static/media/persona2.e2c1440621b2e3a83eba.jpg",
+    "static/media/catSticker.PNG": "/EileenPortfolio/static/media/catSticker.7421e10c76a2955a2505.PNG",
+    "static/media/persona1.jpg": "/EileenPortfolio/static/media/persona1.061c5da3c738efe78a7c.jpg",
     "static/media/cards.png": "/EileenPortfolio/static/media/cards.94f02c9f0d8d3414c2dc.png",
     "static/media/promptFinal.jpg": "/EileenPortfolio/static/media/promptFinal.c7809929f32f8bd7e30e.jpg",
     "static/media/Capstonelogo.jpg": "/EileenPortfolio/static/media/Capstonelogo.f55a0983d969a7886ed2.jpg",
@@ -35,12 +36,12 @@
     "static/media/Picture3.jpg": "/EileenPortfolio/static/media/Picture3.178e59fe039f5985b520.jpg",
     "static/media/mainpage.png": "/EileenPortfolio/static/media/mainpage.55e8a930a8c94b0851b3.png",
     "index.html": "/EileenPortfolio/index.html",
-    "main.1b086ca9.css.map": "/EileenPortfolio/static/css/main.1b086ca9.css.map",
-    "main.cd8af5de.js.map": "/EileenPortfolio/static/js/main.cd8af5de.js.map",
+    "main.858ef67a.css.map": "/EileenPortfolio/static/css/main.858ef67a.css.map",
+    "main.3edd9d45.js.map": "/EileenPortfolio/static/js/main.3edd9d45.js.map",
     "453.b11b1699.chunk.js.map": "/EileenPortfolio/static/js/453.b11b1699.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b086ca9.css",
-    "static/js/main.cd8af5de.js"
+    "static/css/main.858ef67a.css",
+    "static/js/main.3edd9d45.js"
   ]
 }
