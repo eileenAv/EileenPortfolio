@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './TheAppDesign.css';
 import { FaPencilRuler } from 'react-icons/fa';
 
 export default function TheAppDesign() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="app-design-container">
       <div className="app-design-header">

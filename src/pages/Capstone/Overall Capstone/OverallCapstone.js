@@ -22,7 +22,7 @@ export default function OverallCapstone(){
         </div>
         
         <div className="overall-section">
-          <h2 className="overall-section-title" spellCheck="false">The Value of User Research</h2>
+          <h2 className="overall-section-title" spellCheck="false"> Value of User Research</h2>
           <p className="overall-section-text">
             One aspect of my capstone journey that I appreciate is the value of user research and feedback. When I started my capstone project, the first thing I did was schedule a user interview with my supervisor to learn more about how she approached scheduling.
           </p>
@@ -32,7 +32,7 @@ export default function OverallCapstone(){
         </div>
         
         <div className="overall-section">
-          <h2 className="overall-section-title" spellCheck="false">From Concept to Code</h2>
+          <h2 className="overall-section-title" spellCheck="false"> Concept to Code</h2>
           <p className="overall-section-text">
             One of the biggest challenges of this capstone project was how I was going to implement my ideas into code. I went through some interactions and tool changes before I was able to execute my idea and create a solid plan for my project.
           </p>
@@ -42,7 +42,7 @@ export default function OverallCapstone(){
         </div>
         
         <div className="overall-section">
-          <h2 className="overall-section-title" spellCheck="false">Utilizing AI in New Ways</h2>
+          <h2 className="overall-section-title" spellCheck="false">Innovative AI Use </h2>
           <p className="overall-section-text">
             This capstone project forced me to use AI in a way I hadn't before. In my previous projects using AI, I used it as a chatbot and developed the results it generated into text format. But in this project, I had to use AI to make decisions and then act on those decisions.
           </p>

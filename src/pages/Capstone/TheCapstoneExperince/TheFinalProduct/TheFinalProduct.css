@@ -21,6 +21,36 @@
     margin-bottom: 2rem;
 }
 
+.final-product-images {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.final-product-image-placeholder {
+    flex: 1;
+    max-width: 800px;
+    height: auto;
+    background-color: #f0f0f0;
+    border: 2px dashed #722dcc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #722dcc;
+    font-size: 1.1rem;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.final-product-image-placeholder img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
 .final-product-button {
     display: inline-block;
     padding: 0.85rem 1.6rem;

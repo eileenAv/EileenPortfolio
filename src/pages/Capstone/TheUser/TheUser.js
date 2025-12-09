@@ -21,21 +21,24 @@ export default function TheUser(){
         <div className="user-section">
           <h2 className="user-section-title">Why?</h2>
           <p className="user-section-text">
-           This app is useful for scheduling because it uses AI to give accurate decisions based on the employee’s preferences and quickly creates a digestible and ready-to-implement schedule. Managers can then use this schedule as a reference or starting point to start scheduling, rather than going through every employee's preferences.</p>
-
-<p>This not only cuts down on the time used on scheduling but also decreases the chance of human error and gives managers more time to use on other more important matters.
-
+            This app is useful for scheduling because it uses AI to give accurate decisions based on the employee's preferences and quickly creates a digestible and ready-to-implement schedule. Managers can then use this schedule as a reference or starting point to start scheduling, rather than going through every employee's preferences.
+          </p>
+          <p className="user-section-text">
+            This not only cuts down on the time used on scheduling but also decreases the chance of human error and gives managers more time to use on other more important matters.
           </p>
         </div>
         
         <div className="user-section">
           <h2 className="user-section-title">How?</h2>
           <p className="user-section-text">
-            <p>There are two user interfaces for the app: Manager Interface and Employee Interface.</p>
-            </p>
-
-            <p>In the <b color="purple">employee interface</b>, employees will fill out a form to record their availability preferences, hours, age, and days they cannot work. This will then be stored in the app's database for later use. </p>
-        <p>In the <b>manager interface</b>, the manager can see the percentage of employees who have input their availability. They can use this to decide whether to create the schedule. They also have a button that, when pressed, creates an accurate schedule for them using the submitted availability data.</p>
+            There are two user interfaces for the app: Manager Interface and Employee Interface.
+          </p>
+          <p className="user-section-text">
+            In the <strong>employee interface</strong>, employees will fill out a form to record their availability preferences, hours, age, and days they cannot work. This will then be stored in the app's database for later use.
+          </p>
+          <p className="user-section-text">
+            In the <strong>manager interface</strong>, the manager can see the percentage of employees who have input their availability. They can use this to decide whether to create the schedule. They also have a button that, when pressed, creates an accurate schedule for them using the submitted availability data.
+          </p>
         </div>
       </div>
     </div>

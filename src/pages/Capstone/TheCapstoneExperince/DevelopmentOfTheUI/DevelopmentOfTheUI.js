@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './DevelopmentOfTheUI.css';
-import { FaCode } from 'react-icons/fa';
+import { FaPalette } from 'react-icons/fa';
 
 
 export default function DevelopmentOfTheUI() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="dev-ui-container">
       <div className="dev-ui-header">
         <h1 className="dev-ui-title">Development of the UI</h1>
-        <FaCode className="dev-ui-icon" />
+        <FaPalette className="dev-ui-icon" />
       </div>
       
       <div className="dev-ui-sections">

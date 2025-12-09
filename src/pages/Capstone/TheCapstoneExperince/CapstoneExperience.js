@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CapstoneExperience.css';
 import { FaMap } from 'react-icons/fa';
 
 export default function CapstoneExperience(){
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="experience-container">
