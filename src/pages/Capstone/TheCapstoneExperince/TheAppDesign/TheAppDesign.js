@@ -18,7 +18,7 @@ export default function TheAppDesign() {
         <div className="app-design-section">
           <h2 className="app-design-section-title" spellCheck="false">Initial System Architecture</h2>
           <p className="app-design-section-text">
-            At first, I thought that I would need only one database and folder to store the data. Below is the inital system architecture. I assumed that the data will just be pulled from the fronted and directly sent to the AI.
+            At first, I thought that I would need only one database and folder to store the data. Below is the initial system architecture. I assumed that the data will just be pulled from the frontend and directly sent to the AI.
           </p>
           <div className="app-design-image-container">
             <img src={require('../../../../assets/Capstone/previousDiagram.png')} alt="Initial System Architecture" className="app-design-image" />
@@ -29,7 +29,7 @@ export default function TheAppDesign() {
         <div className="app-design-section">
           <h2 className="app-design-section-title" spellCheck="false">Current System Architecture</h2>
           <p className="app-design-section-text">
-            After some more brainstorming and help from my expert, I realized that it would be better if I stored all the data at the database first, and then have AI pull the storedemployee data from the database. Then the AI would send the new midified data back to the database, where it would be later pulled to be used by the frontend. By implementig these changes to the final system architecture, I had a better idea of what my app would look like. I also added what output I wanted from the AI.
+            After some more brainstorming and help from my expert, I realized that it would be better if I stored all the data at the database first, and then have AI pull the stored employee data from the database. Then the AI would send the new modified data back to the database. Then this data would be pulled by the frontend and displayed in a schedule design. By implementing these changes to the final system architecture, I had a better idea of what my app would look like. I also added what output I wanted from the AI.
           </p>
           <div className="app-design-image-container">
             <img src={require('../../../../assets/Capstone/finalDiagram.png')} alt="Current System Architecture" className="app-design-image" />

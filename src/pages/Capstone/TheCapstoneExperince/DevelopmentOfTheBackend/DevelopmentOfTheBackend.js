@@ -18,7 +18,7 @@ export default function DevelopmentOfTheBackend() {
         <div className="dev-backend-section">
           <h2 className="dev-backend-section-title" spellCheck="false">My Databases</h2>
           <p className="dev-backend-section-text">
-            Here is the screenshot of my current database structure using MongoDB Atlas. I used two collections, one for employee preferences and one for employees that where assigned shifts. The employee collection stores employee preference details, while the shifts collection stores employee names and what shifts they are assisgned to. The AI first pulls from the employee preferences data and after anaylzing it, it sends it to the employee shifts database.
+            Here is the screenshot of my current database structure using MongoDB Atlas. I used two collections, one for employee preferences and one for employees that were assigned shifts. The employee collection stores employee preference details, while the shifts collection stores employee names and what shifts they are assigned to. The AI first pulls from the employee preferences data and after analyzing it, it sends it to the employee shifts database.
           </p>
           <div className="dev-backend-image-container">
             <img src={require('../../../../assets/Capstone/databaseScreenshot.jpg')} alt="Database Screenshot" className="dev-backend-image" />

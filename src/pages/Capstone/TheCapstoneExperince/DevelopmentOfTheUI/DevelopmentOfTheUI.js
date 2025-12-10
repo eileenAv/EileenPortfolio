@@ -19,7 +19,7 @@ export default function DevelopmentOfTheUI() {
         <div className="dev-ui-section">
           <h2 className="dev-ui-section-title" spellCheck="false">Initial Design Mockups</h2>
           <p className="dev-ui-section-text">
-            When I was first developing the UI for the app, I created mockups I could quickly modify using Figma. After several iterations and user feedback on my designs, I refined the designs to better meet user needs .
+            When I was first developing the UI for the app, I created mockups I could quickly modify using Figma. After several iterations and user feedback on my designs, I refined the designs to better meet user needs.
           </p>
           <div className="dev-ui-images-grid">
             <div className="dev-ui-image-container">
@@ -36,7 +36,7 @@ export default function DevelopmentOfTheUI() {
         <div className="dev-ui-section">
           <h2 className="dev-ui-section-title" spellCheck="false">Final Designs</h2>
           <p className="dev-ui-section-text">
-            After refining the initial mockups based on feedback, I developed the final designs using React. These UI compnents are the ones that are currently implemented in the app. The process of getting to the final design took about 3 weeks.
+            After refining the initial mockups based on feedback, I developed the final designs using React. These UI components are the ones that are currently implemented in the app. The process of getting to the final design took about 3 weeks.
           </p>
           <div className="dev-ui-images-grid">
             <div className="dev-ui-image-container">
@@ -45,7 +45,7 @@ export default function DevelopmentOfTheUI() {
             </div>
             <div className="dev-ui-image-container">
               <img src={require('../../../../assets/Capstone/avalbilityForm.jpg')} alt="Availability Form" className="dev-ui-image" />
-              <p className="dev-ui-caption">Availability Form- This is what the emplyee form for filling out preferences looks like</p>
+              <p className="dev-ui-caption">Availability Form - This is what the employee form for filling out preferences looks like</p>
             </div>
           </div>
         </div>
