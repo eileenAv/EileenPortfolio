@@ -60,6 +60,16 @@
     margin: 0;
 }
 
+.bibliography-section-text a {
+    color: #722dcc;
+    text-decoration: none;
+}
+
+.bibliography-section-text a:hover {
+    color: #9b4eeb;
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .bibliography-header {
         flex-direction: row;
