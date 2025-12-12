@@ -36,8 +36,8 @@ export default function DevelopmentOfTheUI() {
         <div className="dev-ui-section">
           <h2 className="dev-ui-section-title" spellCheck="false">Final Designs</h2>
           <p className="dev-ui-section-text">
-            After refining the initial mockups based on feedback, I developed the final designs using React. These UI components are the ones that are currently implemented in the app. The process of getting to the final design took about 3 weeks.
-          </p>
+            After refining the initial mockups based on feedback, I developed the final designs using React. These UI components are the ones that are currently implemented in the app. The process of getting to the final design took about 3 weeks. This was becuase I made Figma mockups first and then would get feedback from peers and my instructor
+I would then iterate according to the changes.          </p>
           <div className="dev-ui-images-grid">
             <div className="dev-ui-image-container">
               <img src={require('../../../../assets/Capstone/Picture3.jpg')} alt="Final Design Picture 3" className="dev-ui-image" />
