@@ -73,6 +73,14 @@
     transform: translateY(1px);
 }
 
+.final-product-caption {
+    text-align: center;
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
 @media (max-width: 768px) {
     .final-product-title {
         font-size: 2rem;
