@@ -56,6 +56,7 @@ function Projects() {
   return (
     <section className="section">
       <h2>Projects</h2>
+      <p>Click on my projects to learn more about each one.</p>
       <ul className="proj-list">
         {projects.map(project => (
           <li 
