@@ -69,36 +69,7 @@ function Home() {
           </div>
         </div>
         
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100vh', pointerEvents: 'none', zIndex: 1000 }}>
-          <div style={{ position: 'relative', width: '100%', height: '100%', pointerEvents: 'none' }}>
-            <div style={{ 
-              position: 'absolute',
-              left: isMobile ? `calc(${stickerX}px + 60px)` : `calc(${stickerX}px + 150px)`,
-              top: `calc(${stickerY}px + 40px)`,
-              color: 'rgba(255, 255, 255, 0.8)',
-              fontSize: isMobile ? '11px' : '14px',
-              fontWeight: '500',
-              pointerEvents: 'none',
-              letterSpacing: '0.3px',
-              textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)',
-              whiteSpace: 'nowrap',
-              display: isMobile ? 'none' : 'block'
-            }}>
-              Try dragging me around!
-            </div>
-            <StickerPeel
-              imageSrc={catSticker}
-              width={stickerWidth}
-              rotate={15}
-              peelBackHoverPct={35}
-              peelBackActivePct={45}
-              initialPosition={{ x: stickerX, y: stickerY }}
-              peelDirection={45}
-              shadowIntensity={0.7}
-              lightingIntensity={0.15}
-            />
-          </div>
-        </div>
+      
       </section>
     </>
   );
