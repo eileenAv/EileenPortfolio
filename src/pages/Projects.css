@@ -5,7 +5,7 @@
 }
 
 .section h2 {
-  color: #722dcc;
+  color: #0d6e51;
   font-size: 2.5rem;
   margin-bottom: 40px;
   font-family: 'Lora', serif;
@@ -36,9 +36,9 @@
 }
 
 .proj-card:hover {
-  border-color: #722dcc;
+  border-color: #0d6e51;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(114, 45, 204, 0.1);
+  box-shadow: 0 4px 12px rgba(13, 110, 81, 0.1);
 }
 
 .proj-card h3 {
@@ -84,7 +84,7 @@
 
 .proj-preview h4 {
   margin: 0 0 8px 0;
-  color: #722dcc;
+  color: #0d6e51;
 }
 
 .proj-preview p {

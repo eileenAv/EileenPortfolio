@@ -49,7 +49,7 @@
 .capstone-button {
     padding: 0.85rem 1.6rem;
     font-size: 1rem;
-    background-color: #722dcc; /* site purple */
+    background-color: #0d6e51;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -59,13 +59,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(114,45,204,0.12);
+    box-shadow: 0 4px 12px rgba(13,110,81,0.12);
 }
 
 .capstone-button:hover {
-    background-color: #7B1FFF; /* lighter purple on hover */
+    background-color: #34c79a;
     transform: translateY(-2px);
-    box-shadow: 0 8px 22px rgba(114,45,204,0.18);
+    box-shadow: 0 8px 22px rgba(13,110,81,0.18);
 }
 
 .capstone-button:active {

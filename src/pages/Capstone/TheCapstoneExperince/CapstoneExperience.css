@@ -39,7 +39,7 @@
     top: 40px;
     bottom: 40px;
     width: 4px;
-    background: linear-gradient(to bottom, #722dcc, #4A90E2);
+    background: linear-gradient(to bottom, #0d6e51, #34c79a);
 }
 
 .timeline-item {
@@ -61,14 +61,14 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #722dcc;
+    background-color: #0d6e51;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     font-size: 1.2rem;
-    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #722dcc;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #0d6e51;
     z-index: 1;
 }
 
