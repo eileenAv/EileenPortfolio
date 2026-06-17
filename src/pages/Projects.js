@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Projects.css";
+import ChromaGrid from "../components/ChromaGrid";
 import oraLogo from "../assets/Ora/ORAlogo.jpg";
 import juvoLogo from "../assets/Juvo/juvologo.png";
 import athenaLogo from "../assets/Athena/athenaLogo.png";
@@ -10,45 +11,45 @@ import letiLogo from "../assets/leti/ThisisTheHero.png";
 function Projects() {
   const navigate = useNavigate();
 
-  const projects = [
+  const items = [
     {
-      id: 1,
+      image: oraLogo,
       title: "Ora Project",
-      description: "UX Design and Development of the Ora platform interface",
-      previewImage: oraLogo,
-      tech: ["React", "UI/UX", "Frontend"],
+      subtitle: "UX Design and Development of the Ora platform interface",
+      borderColor: "#722dcc",
+      gradient: "linear-gradient(145deg, #722dcc, #1a0033)",
       route: "/projects/ora"
     },
     {
-      id: 2,
+      image: juvoLogo,
       title: "Juvo",
-      description: "UX Design and Development of the Juvo platform interface",
-      previewImage: juvoLogo,
-      tech: ["React", "UI/UX", "Frontend", "Hackathon"],
+      subtitle: "UX Design and Development of the Juvo platform interface",
+      borderColor: "#10B981",
+      gradient: "linear-gradient(145deg, #10B981, #002a1a)",
       route: "/projects/juvo"
     },
     {
-      id: 3,
-      title: "Uw Website Redesign",
-      description: "A personal project where I redesigned my university's website.",
-      previewImage: uwLogo,
-      tech: ["React", "UI/UX", "UX Research", "Benchmarking"],
+      image: uwLogo,
+      title: "UW Website Redesign",
+      subtitle: "A personal project where I redesigned my university's website.",
+      borderColor: "#3B82F6",
+      gradient: "linear-gradient(145deg, #3B82F6, #00123a)",
       route: "/projects/uw-redesign"
     },
     {
-      id: 4,
+      image: athenaLogo,
       title: "Project Alpha: Athena AI Study Bot",
-      description: "AI-powered study tool for students",
-      previewImage: athenaLogo,
-      tech: ["AI","Ux Research", "UI/UX"],
+      subtitle: "AI-powered study tool for students",
+      borderColor: "#F59E0B",
+      gradient: "linear-gradient(145deg, #F59E0B, #2a1a00)",
       route: "/projects/athena"
     },
     {
-      id: 5,
+      image: letiLogo,
       title: "LETI Internship: Website Redesign",
-      description: "Redesign of the LETI non-profit organization website",
-      previewImage: letiLogo,
-      tech: ["Webdesign", "UI/UX", "Frontend"],
+      subtitle: "Redesign of the LETI non-profit organization website",
+      borderColor: "#EF4444",
+      gradient: "linear-gradient(145deg, #EF4444, #2a0000)",
       route: "/projects/leti"
     }
   ];
@@ -56,41 +57,21 @@ function Projects() {
   return (
     <section className="section">
       <h2>Projects</h2>
-      <p>Click on my projects to learn more about each one.</p>
-      <ul className="proj-list">
-        {projects.map(project => (
-          <li 
-            key={project.id} 
-            className="proj-card"
-            onClick={() => navigate(project.route)}
-          >
-            <h3 data-project={project.title.toLowerCase().includes('juvo') ? 'juvo' : ''}>{project.title}</h3>
-            <p>{project.description}</p>
-            
-            <div className="proj-preview">
-              {project.previewImage && (
-                <img 
-                  src={project.previewImage} 
-                  alt={`Preview of ${project.title}`} 
-                />
-              )}
-              <div className="proj-preview-content">
-                <h4>Project Overview</h4>
-                <p>{project.detailDescription}</p>
-                <div className="proj-tech">
-                  {project.tech && project.tech.map((tech, index) => (
-                    <span key={index} className="tech-tag">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <p>Click on a project to learn more.</p>
+      <div style={{ position: 'relative', minHeight: '500px' }}>
+        <ChromaGrid
+          items={items}
+          radius={300}
+          damping={0.45}
+          fadeOut={0.6}
+          ease="power3.out"
+          columns={3}
+          onCardClick={(item) => navigate(item.route)}
+        />
+      </div>
     </section>
   );
 }
 
 export default Projects;
+

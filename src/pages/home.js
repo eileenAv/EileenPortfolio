@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import profileImage from "../assets/profile.jpg";
+import profileImage from "../assets/headshot2.2.jpg";
 import catSticker from "../assets/catSticker.PNG";
 import ProfileCard from "../components/ProfileCard";
 import Iridescence from "../components/Iridescence";
@@ -19,11 +19,11 @@ function Home() {
   return (
     <>
       <section className="home hero">
-        <div className="iridescence-bg">
+        {/* <div className="iridescence-bg">
           <Iridescence color={[0.8, 0.4, 1.2]} speed={0.3} />
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 1, zIndex: 1 }}>
           </div>
-        </div>
+        </div> */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
           <div className="hero-content">
             <div className="hero-copy">
