@@ -56,8 +56,10 @@ function About() {
             <p>
               I believe that design choices should be scientific, purpose-driven, and human-centered. When I am not designing or coding, you can find me swimming or drawing. Thanks for stopping by!
             </p>
+             <a href={resume} download="EileenAvci2026Resumev11.pdf" className="download-resume-btn">Download My Resume</a>
 
-             <div className="artist-text">
+
+             {/* <div className="artist-text">
             <h1>Artist's Statement</h1>
         <p>
 I believe design decisions should be grounded in UX research and informed by science, and I am always looking for ways to improve the user experience. This philosophy shapes my design process. Before bringing ideas to life with tools like Figma and React, I focus on understanding users through surveys, user interviews, and online research. Every time I go through that process, I am fascinated by the diverse and unexpected needs and tools of each unique user.   
@@ -68,7 +70,7 @@ I believe design decisions should be grounded in UX research and informed by sci
         
       <a href={resume} download="EileenAvci2026Resumev11.pdf" className="download-resume-btn">Download My Resume</a>
 
-      </div>
+      </div> */}
           </div>
         </div>
       </div>

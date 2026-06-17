@@ -125,7 +125,8 @@ body {
 .content {
   width: 100%;
   margin: 0 auto;
-  min-height: calc(100vh - 60px); /* subtract navbar height */
+  min-height: 100vh;
+  padding-top: 120px;
   display: flex;
   flex-direction: column;
 }
@@ -134,7 +135,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 72px);
   padding: 0 20px;
   text-align: left;
   background-color: #3b1b65;

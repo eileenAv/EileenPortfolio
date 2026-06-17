@@ -10,7 +10,7 @@ import Leti from "./pages/Projects/Leti/Leti.js";
 import "./App.css";
 import Juvo from "./pages/Projects/Juvo/Juvo.js";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import StaggeredMenu from "./components/StaggeredMenu";
 import CapstoneLanding from "./pages/Capstone/CapstoneLanding.js";
 import OverallCapstone from "./pages/Capstone/Overall Capstone/OverallCapstone.js";
 import TheUser from "./pages/Capstone/TheUser/TheUser.js";
@@ -25,7 +25,21 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Navbar />
+        <StaggeredMenu
+          position="right"
+          colors={['#B497CF', '#722dcc']}
+          accentColor="#722dcc"
+          menuButtonColor="#fff"
+          openMenuButtonColor="#000"
+          displayItemNumbering={true}
+          isFixed={true}
+          items={[
+            { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
+            { label: 'About', ariaLabel: 'About me', link: '/about' },
+            { label: 'Projects', ariaLabel: 'View projects', link: '/projects' },
+            { label: 'Capstone', ariaLabel: 'View capstone', link: '/capstone' },
+          ]}
+        />
 
         {/* Page Content */}
         <div className="content">
