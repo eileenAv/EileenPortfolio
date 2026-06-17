@@ -11,6 +11,7 @@ import "./App.css";
 import Juvo from "./pages/Projects/Juvo/Juvo.js";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import ClickSpark from "./components/ClickSpark";
 import CapstoneLanding from "./pages/Capstone/CapstoneLanding.js";
 import OverallCapstone from "./pages/Capstone/Overall Capstone/OverallCapstone.js";
 import TheUser from "./pages/Capstone/TheUser/TheUser.js";
@@ -25,6 +26,14 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <ClickSpark
+          sparkColor="#c084fc"
+          sparkSize={12}
+          sparkRadius={22}
+          sparkCount={10}
+          duration={450}
+          extraScale={1.2}
+        />
         <Navbar />
 
         {/* Page Content */}
