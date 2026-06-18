@@ -1,36 +1,26 @@
 import React, { useRef } from "react";
 import headshotImage from "../assets/headshot2.2.jpg";
 import oraImage from "../assets/Ora/mainpage.png";
-import BorderGlow from "../components/BorderGlow";
 import "./PortfolioCream.css";
-
-// Rainbow color sets — each project gets a different palette
-const RAINBOW_PALETTES = [
-  ['#c084fc', '#f472b6', '#818cf8'],  // purple-pink-indigo
-  ['#34d399', '#38bdf8', '#a78bfa'],  // green-cyan-purple
-  ['#fbbf24', '#f97316', '#ef4444'],  // amber-orange-red
-  ['#60a5fa', '#34d399', '#f472b6'],  // blue-green-pink
-  ['#e879f9', '#38bdf8', '#4ade80'],  // fuchsia-cyan-green
-];
 
 const projects = [
   {
     title: "Ora — decision-support app",
-    year: null,
+    year: "2025",
     description: "Designed & built end to end · Product design · React · Figma",
     image: oraImage,
     tags: ["UX Research", "UI Design", "Frontend"],
     link: "/projects/ora",
   },
   {
-    title: "Juvo",
-    year: "2024",
+    title: "Juvo- Trading services platform",
+    year: "2025",
     description: "Responsive platform interface — UX + frontend.",
     placeholder: "[ Juvo screen ]",
     link: "/projects/juvo",
   },
   {
-    title: "Athena",
+    title: "Athena-AI-powered student tool",
     year: "2025",
     description: "AI-powered study tool — UX + frontend.",
     placeholder: "[ Athena screen ]",
@@ -38,30 +28,27 @@ const projects = [
   },
   {
     title: "UW Bothell redesign",
-    year: "2024",
+    year: "2025",
     description: "Self-initiated IA + UI overhaul.",
     placeholder: "[ UW redesign ]",
     link: "/projects/uw-redesign",
   },
   {
     title: "LETI Internship",
-    year: "2023",
+    year: "2025",
     description: "Nonprofit website redesign.",
     placeholder: "[ LETI screen ]",
     link: "/projects/leti",
   },
 ];
 
-function ProjectCard({ project, paletteIndex }) {
+function ProjectCard({ project }) {
   const navigate = (link) => {
     window.location.hash = link;
   };
 
-  const colors = RAINBOW_PALETTES[paletteIndex % RAINBOW_PALETTES.length];
-
-  const cardContent = project.large ? (
+  const card = project.large ? (
     <article className="project-card project-card-large">
-      <span className="card-shine" />
       <div className="project-image project-image-large">
         <img src={project.image} alt={project.title} />
       </div>
@@ -80,7 +67,6 @@ function ProjectCard({ project, paletteIndex }) {
     </article>
   ) : (
     <article className="project-card">
-      <span className="card-shine" />
       <div className="project-placeholder">
         <span>{project.placeholder}</span>
       </div>
@@ -97,30 +83,19 @@ function ProjectCard({ project, paletteIndex }) {
     </article>
   );
 
-  const glowWrapped = (
-    <BorderGlow
-      colors={colors}
-      glowColor="300 80 75"
-      glowIntensity={1.4}
-      edgeSensitivity={20}
-      glowRadius={50}
-      coneSpread={30}
-      backgroundColor="transparent"
-      borderRadius={16}
-      fillOpacity={0.4}
-    >
-      {cardContent}
-    </BorderGlow>
-  );
-
   return project.link ? (
     <div
-      style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}
+      className="project-card-wrapper"
+      style={{ cursor: "pointer" }}
       onClick={() => navigate(project.link)}
     >
-      {glowWrapped}
+      {card}
     </div>
-  ) : glowWrapped;
+  ) : (
+    <div className="project-card-wrapper">
+      {card}
+    </div>
+  );
 }
 
 function Home() {
@@ -157,8 +132,8 @@ function Home() {
           </div>
 
           <div className="project-grid">
-            {projects.map((project, i) => (
-              <ProjectCard key={project.title} project={project} paletteIndex={i} />
+            {projects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
             ))}
           </div>
         </section>
