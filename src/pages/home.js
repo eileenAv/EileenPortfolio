@@ -138,6 +138,7 @@ function Home() {
 
             <div className="hero-split">
               <h1>Hi, I'm Eileen, Nice to Meet you!</h1>
+              <img src={headshotImage} alt="Eileen Avci" className="hero-bubble" />
               <p className="hero-subtitle">Thanks for visiting my portfolio. I believe
                 design decisions should be purpose-driven, evidence-based, and human-centered</p>
             </div>
