@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
+import useReveal from '../../../hooks/useReveal';
 import './UwRedesign.css';
+
+function RevealSection({ className, children, ...props }) {
+  const ref = useReveal();
+  return <section ref={ref} className={`reveal ${className || ''}`} {...props}>{children}</section>;
+}
 
 function UwRedesign() {
   const [fullScreenImage, setFullScreenImage] = useState(null);
@@ -33,28 +39,28 @@ function UwRedesign() {
         </div>
       </section>
 
-      <section className="uwRedesign-section">
+      <RevealSection className="uwRedesign-section">
         <h2 className="uwRedesign-h2">Overview</h2>
         <p>
        This is the redesign project I completed on the current UW Bothell website during my internship at Koç University. After conducting a benchmarking practice, I decided to explore ways to improve the UW website by addressing some aspects I had identified. I was inspired by modern design trends and aimed to create a more engaging and user-friendly experience for visitors.
         </p>
-      </section>
+      </RevealSection>
 
-      <section className="uwRedesign-section">
+      <RevealSection className="uwRedesign-section">
         <h2 className="uwRedesign-h2">Goal</h2>
         <p>
-          To redesign the UW homepage and subpages in a way that incorporates the current UX design trends and creates a more clear and user-friendly version of the current UW Bothell website. I did I benchmarking anaylsis of the current UW Bothell website and identified some ways that can be improved. 
+          To redesign the UW homepage and subpages in a way that incorporates the current UX design trends and creates a more clear and user-friendly version of the current UW Bothell website. I did I benchmarking anaylsis of the current UW Bothell website and identified some ways that can be improved.
         </p>
-      </section>
+      </RevealSection>
 
-      <section className="uwRedesign-section">
+      <RevealSection className="uwRedesign-section">
         <h2 className="uwRedesign-h2">Solution</h2>
         <p>
           I decided to implement the minimalist and flat design, the liquid glass design, card-based and modular structure, and micro interactions to enhance the user experience. I also made sure that some of the buttons were consistent, and created my own icons for the explore section that makes it more eye-catching.
         </p>
-      </section>
+      </RevealSection>
 
-      <section className="uwRedesign-role">
+      <RevealSection className="uwRedesign-role">
         <h2 className="uwRedesign-h2">Key Functionalities of the Redesign</h2>
         <ol className="uwRedesign-ordered">
           <li>Added the social media directory page to the footer and got rid of that section due to repeating elements</li>
@@ -64,9 +70,9 @@ function UwRedesign() {
           <li>Added icons to the Explore section</li>
           <li>Made the button position and animation consistent</li>
         </ol>
-      </section>
+      </RevealSection>
 
-      <section className="uwRedesign-process">
+      <RevealSection className="uwRedesign-process">
         <p>
           Below is the wireframe of the redesigned UW website and icons that I created for the website redesign.
         </p>
@@ -102,9 +108,9 @@ function UwRedesign() {
             </button>
           </div>
         )}
-      </section>
+      </RevealSection>
 
-      <section className="uwRedesign-final">
+      <RevealSection className="uwRedesign-final">
         <h2 className="uwRedesign-h2">Prototype Demo</h2>
         <p>
           Here is the high fidelity prototype of my redesign of the UW Redesign prototype.
@@ -112,15 +118,14 @@ function UwRedesign() {
             View Prototype
           </a>
         </p>
-        
-      </section>
+      </RevealSection>
 
-      <section className="uwRedesign-process">
+      <RevealSection className="uwRedesign-process">
         <h2 className="uwRedesign-h2">What I Learned</h2>
         <p>
           Through the UW Redesign project, I gained experience in maintaining the brand identity of an organization and I learned about benchmarking analysis. I was also able to learn more about the current UX trends and how to effectively implement them into my design.
         </p>
-      </section>
+      </RevealSection>
     </main>
   );
 };

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
 
 :root {
   --page: #f6f0e2;
@@ -39,7 +39,7 @@
 .portfolio-page {
   min-height: 100vh;
   background: var(--page);
-  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
   color: var(--text);
 }
 
@@ -115,7 +115,7 @@
 .pc-hero h1 {
   max-width: 720px;
   margin: 0 auto;
-  font-family: "Instrument Serif", serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: clamp(44px, 6vw, 62px);
   line-height: 1.06;
   letter-spacing: -0.015em;
@@ -148,6 +148,18 @@
   border-radius: 40px;
   text-decoration: none;
   color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.pc-primary-button:hover,
+.pc-footer-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(52, 199, 154, 0.35);
+}
+
+.pc-secondary-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .pc-primary-button,
@@ -186,19 +198,24 @@
   padding: 20px 40px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  row-gap: 20px;
+  column-gap: 20px;
 }
 
 /* Cards */
 
 .project-card-wrapper {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 16px;
   text-decoration: none;
   color: inherit;
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out, box-shadow 0.3s ease;
 }
 
-.project-card-wrapper:hover {
+.project-card-wrapper.revealed {
+  transition: transform 0.3s ease, opacity 0.7s ease-out, box-shadow 0.3s ease;
+}
+
+.project-card-wrapper.revealed:hover {
   transform: translateY(-8px);
   box-shadow:
     0 12px 28px rgba(0, 0, 0, 0.12),
@@ -232,24 +249,19 @@
   object-fit: contain;
 }
 
-.project-placeholder {
+.project-image-small {
   height: 160px;
-  background: repeating-linear-gradient(
-    135deg,
-    var(--stripe-1),
-    var(--stripe-1) 10px,
-    var(--stripe-2) 10px,
-    var(--stripe-2) 20px
-  );
+  background: var(--deep);
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
-.project-placeholder span {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
-  color: var(--stripe-text);
+.project-image-small img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .project-content {
@@ -271,7 +283,7 @@
 }
 
 .project-content-large h3 {
-  font-family: "Instrument Serif", serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 28px;
   line-height: 1.1;
   font-weight: 400;
@@ -307,19 +319,19 @@
   justify-content: space-between;
   align-items: flex-end;
   gap: 10px;
+  margin-top: 2px;
 }
 
-.pc-arrow {
-  color: var(--accent-mid);
-  font-size: 24px;
+.learn-more-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: var(--deep);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 30px;
+  white-space: nowrap;
   flex: none;
-  margin-left: 18px;
-}
-
-.pc-arrow.small {
-  font-size: 18px;
-  margin-left: 0;
-  line-height: 1;
 }
 
 .tag-row {
@@ -388,7 +400,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Instrument Serif", serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: clamp(88px, 16vw, 168px);
   line-height: 1;
   white-space: nowrap;
@@ -483,3 +495,4 @@
     padding: 64px 24px 52px;
   }
 }
+

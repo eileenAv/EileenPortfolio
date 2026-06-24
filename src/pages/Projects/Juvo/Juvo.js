@@ -1,5 +1,11 @@
 import React from 'react';
+import useReveal from '../../../hooks/useReveal';
 import './Juvo.css';
+
+function RevealSection({ className, children, ...props }) {
+  const ref = useReveal();
+  return <section ref={ref} className={`reveal ${className || ''}`} {...props}>{children}</section>;
+}
 
 const Juvo = () => {
   return (
@@ -15,7 +21,7 @@ const Juvo = () => {
           <div className="juvo-hero__text">
             <h1 className="juvo-title">JUVO</h1>
             <p className="juvo-subtitle">
-            
+
             </p>
 
             <div className="juvo-hero__details">
@@ -30,44 +36,46 @@ const Juvo = () => {
         </div>
       </section>
 
-      <section className="juvo-section">
+      <RevealSection className="juvo-section">
         <h2 className="juvo-h2">Overview</h2>
         <p>
           Juvo is an app that allows users to trade services. Users can trade their talents for other services, giving an equal opportunity for people to access services that they may not be able to afford. My team and I built this as a project for the UWB Hackathon Save The World in 2-3 days. I worked on the front-end of this project. I designed and coded it using React.js, HTML and CSS. I also helped with the design of the presentation. We implemented the back-end using Java with the Spring Boot framework. Our database of choice was MongoDB. For deployment, the front-end was hosted on GitHub Pages, and the back-end was run on a personal server.
         </p>
-      </section>
+      </RevealSection>
 
-      <section className="juvo-section">
+      <RevealSection className="juvo-section">
         <h2 className="juvo-h2">Goal</h2>
         <p>
           We got to talking about our economy and businesses and how difficult it can be to afford anything beyond necessities. We took inspiration from service worker friends who trade their talents with other service workers, and decided to build a system to facilitate those exchanges.
         </p>
-      </section>
+      </RevealSection>
 
-      <section className="juvo-section">
+      <RevealSection className="juvo-section">
         <h2 className="juvo-h2">Solution</h2>
         <p>
           Juvo is made to connect businesses and services alike, for people to trade their arts and talents in place of money. For example, a user could trade massage for a tattoo, or a tutoring session for fresh baked muffins. These services would usually cost a pretty penny but now they can be paid for with a talent/service that you provide, further building community and the cashless economy.
         </p>
-      </section>
+      </RevealSection>
 
-      <section className="juvo-role">
+      <RevealSection className="juvo-role">
         <h2 className="juvo-h2">Key Functionalities of Our App</h2>
         <ol className="juvo-ordered">
           <li>User can create a profile to showcase their skills and services</li>
           <li>Users can post a contract where they state what service they want in exchange for their own service</li>
           <li>Users can browse and respond to contracts posted by others</li>
         </ol>
-      </section>
-      <section className='juvo-process'>
+      </RevealSection>
+
+      <RevealSection className="juvo-process">
         <p>Below is the interface I designed and implemented for the Juvo app. I also helped with the main screen.</p>
-  <div className="juvo-images">
-                <img src={require("../../../assets/Juvo/screencapture-angespr-github-io-juvo-2025-10-10-12_14_29.png")} alt="Profile screenshot" className="images__img" />
-              </div>
-        </section>
-      <section className="juvo-final">
+        <div className="juvo-images">
+          <img src={require("../../../assets/Juvo/screencapture-angespr-github-io-juvo-2025-10-10-12_14_29.png")} alt="Profile screenshot" className="images__img" />
+        </div>
+      </RevealSection>
+
+      <RevealSection className="juvo-final">
         <h2 className="juvo-h2">Final Product Demo</h2>
-         <p>Here is the demo of the project. Learn more about the project here: <a href="https://devpost.com/software/juvo-idmzcl#updates">https://devpost.com/software/juvo-idmzcl#updates</a></p>
+        <p>Here is the demo of the project. Learn more about the project here: <a href="https://devpost.com/software/juvo-idmzcl#updates">https://devpost.com/software/juvo-idmzcl#updates</a></p>
         <div className="juvo-video">
           <iframe
             width="100%"
@@ -79,17 +87,16 @@ const Juvo = () => {
             allowFullScreen
           ></iframe>
         </div>
-      </section>
+      </RevealSection>
 
-      <section className="juvo-process">
+      <RevealSection className="juvo-process">
         <h2 className="juvo-h2">What I learned</h2>
         <p>
           I learned a lot during this process, especially since I had not used the coding language React before. I improved my collaboration skills by working closely with my team members, and I also found it fun to create an app with a team in a very short timeframe.
         </p>
-      </section>
+      </RevealSection>
     </main>
   );
 };
 
 export default Juvo;
-

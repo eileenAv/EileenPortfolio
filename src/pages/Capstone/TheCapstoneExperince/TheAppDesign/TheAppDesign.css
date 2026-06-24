@@ -13,6 +13,7 @@
 }
 
 .app-design-title {
+    font-family: "Space Grotesk", sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
     color: #333;
@@ -21,7 +22,7 @@
 
 .app-design-icon {
     font-size: 2.5rem;
-    color: #722dcc;
+    color: #0d6e51;
 }
 
 .app-design-sections {
@@ -38,13 +39,14 @@
 }
 
 .app-design-section-title {
+    font-family: "Space Grotesk", sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    color: #722dcc;
+    color: #0d6e51;
     margin-bottom: 1rem;
     margin-top: 0;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #4A90E2;
+    border-bottom: 3px solid #34c79a;
     display: inline-block;
     background-color: transparent;
     -webkit-text-decoration-line: none;

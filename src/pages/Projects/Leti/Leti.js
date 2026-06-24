@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
+import useReveal from '../../../hooks/useReveal';
 import './Leti.css';
+
+function RevealSection({ className, children, ...props }) {
+  const ref = useReveal();
+  return <section ref={ref} className={`reveal ${className || ''}`} {...props}>{children}</section>;
+}
 
 const Leti = () => {
   const [fullScreenImage, setFullScreenImage] = useState(null);
@@ -33,37 +39,37 @@ const Leti = () => {
         </div>
       </section>
 
-      <section className="leti-section">
+      <RevealSection className="leti-section">
         <h2 className="leti-h2">Overview</h2>
         <p>
          For this internship, I am tasked with redesigning and coding the website for the non-profit organization LETI (Latino Educational Training Institute). My goal through this internship was to enhance the navigation and visuals of the LETI website, making it easier for users, especially new members, to find the resources they need and learn more about the organization. To redesign the website, I utilized and further developed my skills in HTML, CSS, and JavaScript.
         </p>
-      </section>
+      </RevealSection>
 
-      <section className="leti-section">
+      <RevealSection className="leti-section">
         <h2 className="leti-h2">Goal</h2>
         <p>
           My goal was to redesign and code the website for LETI to improve its navigation and visual appeal.
         </p>
-      </section>
+      </RevealSection>
 
-      <section className="leti-section">
+      <RevealSection className="leti-section">
         <h2 className="leti-h2">Solution</h2>
         <p>
           I decided to redesign the current Leti websites to be more minimalist and get rid of the visual clutter that the text sometimes created on their websites. I was inspired by other non-profit websites. I first created the wireframes and mockups in Figma, and then coded the website using HTML, CSS, and JavaScript.
         </p>
-      </section>
+      </RevealSection>
 
-      <section className="leti-role">
+      <RevealSection className="leti-role">
         <h2 className="leti-h2">Key Functionalities of My Redesign</h2>
         <ol className="leti-ordered">
           <li>Uses a more minimalist design approach</li>
           <li>Improves navigation for better user experience</li>
           <li>Places elements in a way that is easy to navigate and understand</li>
         </ol>
-      </section>
+      </RevealSection>
 
-        <section className="leti-process">
+      <RevealSection className="leti-process">
         <p>
           Below is the final looks of the websites that I designed and coded for LETI.
         </p>
@@ -99,15 +105,14 @@ const Leti = () => {
             </button>
           </div>
         )}
-      </section>
-      
+      </RevealSection>
 
-      <section className="leti-role">
+      <RevealSection className="leti-role">
         <h2 className="leti-h2">What I Learned</h2>
         <p>
           Through this internship I developed my project management abilities. This was the first time I had to create a project and set my deliverables and deadlines. Through this internship, I gained practical insights into effectively planning a project to ensure the best possible results.
         </p>
-      </section>
+      </RevealSection>
     </main>
   );
 };
