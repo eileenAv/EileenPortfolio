@@ -136,9 +136,11 @@ function Home() {
               UX Designer &amp; Frontend Developer · Seattle
             </p>
 
-            <h1>Hi, I'm Eileen, Nice to Meet you!</h1>
-            <p>Thanks for visiting my portfolio. I believe
-              design decisions should be purpose-driven, evidence-based, and human-centered</p>
+            <div className="hero-split">
+              <h1>Hi, I'm Eileen, Nice to Meet you!</h1>
+              <p className="hero-subtitle">Thanks for visiting my portfolio. I believe
+                design decisions should be purpose-driven, evidence-based, and human-centered</p>
+            </div>
 
             <div className="hero-actions">
               <button className="pc-primary-button" onClick={scrollToWork}>View work ↓</button>

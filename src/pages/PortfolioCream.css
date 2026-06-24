@@ -112,15 +112,32 @@
   display: inline-block;
 }
 
+.hero-split {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  text-align: left;
+}
+
 .pc-hero h1 {
-  max-width: 720px;
-  margin: 0 auto;
+  flex: 1;
+  margin: 0;
   font-family: "Space Grotesk", sans-serif;
   font-size: clamp(44px, 6vw, 62px);
   line-height: 1.06;
   letter-spacing: -0.015em;
   font-weight: 400;
   color: var(--text-strong);
+}
+
+.hero-subtitle {
+  flex: 0 0 280px;
+  margin: 0;
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--muted);
 }
 
 .hero-description {
@@ -461,6 +478,16 @@
 
   .pc-hero {
     padding: 64px 24px 56px;
+  }
+
+  .hero-split {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    flex: none;
   }
 
   .pc-nav {

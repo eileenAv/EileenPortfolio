@@ -355,10 +355,10 @@ h2::after {
     justify-content: center;
 }
 
-p {
+.ora-project p {
     color: #444;
     line-height: 1.8;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     font-size: 1.1rem;
 }
 
