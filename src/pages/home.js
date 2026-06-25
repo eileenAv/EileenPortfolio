@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import headshotImage from "../assets/headshot2.2.jpg";
 import oraImage from "../assets/Ora/ORAlogo.jpg";
 import juvoImage from "../assets/Juvo/juvologo.png";
@@ -6,6 +6,7 @@ import athenaImage from "../assets/Athena/athenaLogo.png";
 import uwImage from "../assets/ReDesign/Recording 2025-10-10 at 13.12.11.gif";
 import letiImage from "../assets/leti/ThisisTheHero.png";
 import useReveal from "../hooks/useReveal";
+import Iridescence from "../components/Iridescence";
 import "./PortfolioCream.css";
 
 const projects = [
@@ -121,6 +122,28 @@ function RevealSection({ children, className, ...props }) {
 
 function Home() {
   const workRef = useRef(null);
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (heroRef.current) {
+      heroRef.current.style.transform = 'scale(1)';
+      heroRef.current.style.opacity = '1';
+    }
+    const handleScroll = () => {
+      if (!heroRef.current) return;
+      const scrollY = window.scrollY;
+      const vh = window.innerHeight;
+      const progress = Math.min(scrollY / vh, 1);
+      const scale = 1 - progress * 0.15;
+      const opacity = 1 - progress * 1.2;
+      heroRef.current.style.transform = `scale(${scale})`;
+      heroRef.current.style.opacity = Math.max(opacity, 0);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const scrollToWork = (e) => {
     e.preventDefault();
     workRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -128,28 +151,29 @@ function Home() {
 
   return (
     <main className="portfolio-page">
-      <section className="portfolio-shell">
-        <header className="top-section">
-          <section className="pc-hero">
-            <p className="eyebrow">
-              <span />
-              UX Designer &amp; Frontend Developer · Seattle
-            </p>
+      <div className="hero-fixed-wrap">
+        <div className="hero-iridescence">
+          <Iridescence speed={1} amplitude={0.1} mouseReact />
+        </div>
+        <section ref={heroRef} className="pc-hero">
+          <p className="eyebrow">
+            <span />
+            UX Designer &amp; Frontend Developer · Seattle
+          </p>
 
-            <div className="hero-split">
-              <h1>Hi, I'm Eileen, Nice to Meet you!</h1>
-              <img src={headshotImage} alt="Eileen Avci" className="hero-bubble" />
-              <p className="hero-subtitle">Thanks for visiting my portfolio. I believe
-                design decisions should be purpose-driven, evidence-based, and human-centered</p>
-            </div>
+          <div className="hero-split">
+            <h1>Hi, I'm Eileen</h1>
+            <img src={headshotImage} alt="Eileen Avci" className="hero-bubble" />
+            <h1>Welcome to my portfolio!</h1>
+          </div>
 
-            <div className="hero-actions">
-              <button className="pc-primary-button" onClick={scrollToWork}>View work ↓</button>
-              <a href="/resume.pdf" className="pc-secondary-button">Download résumé</a>
-            </div>
-          </section>
-        </header>
+          <div className="hero-actions">
+            <button className="pc-primary-button pc-primary-button--large" onClick={scrollToWork}>Scroll to view my work ↓</button>
+          </div>
+        </section>
+      </div>
 
+      <section className="portfolio-shell portfolio-shell--scrollover">
         <section ref={workRef} id="work" className="work-section">
           <div className="section-header">
             <span>Selected work</span>

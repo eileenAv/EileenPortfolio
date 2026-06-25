@@ -5,6 +5,8 @@
   padding: 2rem 1rem;
   font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .footer-text {

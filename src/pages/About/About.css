@@ -6,14 +6,14 @@
   padding: 10px 10%;
   /* margin-top: 50px; */
   gap: 30px;
-  background-color: #fafafa;
+  background-color: #f6f0e2;
   min-height: 100vh;
   font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
 }
 .artists-statement {
     align-items: center;
     max-width: 2000px;
-    background-color: #fafafa;
+    background-color: #f6f0e2;
     padding: 10px;
     font-size: 1.2rem;
     line-height: 1.6;

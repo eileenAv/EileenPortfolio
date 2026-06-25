@@ -1,5 +1,5 @@
 .leti-page {
-  background: #F5F1EA;
+  background: #f6f0e2;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -42,7 +42,7 @@
   left: 0;
   width: 200px;
   height: 4px;
-  background: #F5F1EA;
+  background: #f6f0e2;
   border-radius: 2px;
 }
 
